@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool drag, release, canMove;
 
     Rigidbody2D rb;
-    [SerializeField] float forceMultuplier;
-
+    [SerializeField] float forceMultiplier;
+    [SerializeField] float maxDragDistance;
+    [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision;
 
 
     // Start is called before the first frame update
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
         Vector3 _startPoint = Camera.main.ScreenToWorldPoint(startingPoint.position);
         Vector3 _endPoint = Camera.main.ScreenToWorldPoint(endPoint.position);
 
-        Vector3 _force = (_endPoint - _startPoint) * forceMultuplier;
+        Vector3 _force = Vector3.ClampMagnitude(_endPoint - _startPoint, maxDragDistance) * forceMultiplier;
         if (rb != null)
             rb.velocity = _force;
         //canMove = false;
@@ -58,7 +59,18 @@ public class PlayerController : MonoBehaviour
         #region Camera Effect 
         if (CameraController.instance != null)
         {
-            CameraController.instance.ShakeCamera(_force.magnitude);
+            CameraController.instance.ShakeCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxImpactOnDrag);
+        }
+        #endregion
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        #region Camera Effect 
+        if (CameraController.instance != null)
+        {
+            Debug.Log(collision.relativeVelocity.magnitude);
+            CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude / cameraMaxImpactOnCollision));
         }
         #endregion
     }
