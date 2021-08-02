@@ -54,5 +54,12 @@ public class PlayerController : MonoBehaviour
         if (rb != null)
             rb.velocity = _force;
         //canMove = false;
+
+        #region Camera Effect 
+        if (CameraController.instance != null)
+        {
+            CameraController.instance.ShakeCamera(_force.magnitude);
+        }
+        #endregion
     }
 }

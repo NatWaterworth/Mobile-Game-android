@@ -11,8 +11,9 @@ public class CameraController : MonoBehaviour
     [SerializeField] GameObject objectToFollow;
 
     [SerializeField] float verticalLerpRatio;
+    [SerializeField] float shakeBaseDuration;
 
-    static CameraController instance;
+    public static CameraController instance;
 
     private void Awake()
     {
@@ -47,13 +48,15 @@ public class CameraController : MonoBehaviour
     /// Shakes camera 
     /// </summary>
     /// <param name="_magnitude"></param>
-    void ShakeCamera(float _magnitude)
+    public void ShakeCamera(float _magnitude)
     {
         StartCoroutine(Shake(_magnitude));
     }
 
     IEnumerator Shake(float _magnitude)
     {
+
+
         yield return null;
     }
 }
