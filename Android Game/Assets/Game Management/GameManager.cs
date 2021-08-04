@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-
+    public void GameOver()
+    {
+        Debug.Log("Game Over!");
+    }
 
 
     // Update is called once per frame
@@ -34,4 +37,6 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+
 }

@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float maxDragDistance;
     [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision;
 
+    [Header("Trigger Tags")]
+    [SerializeField] string moveResetTag;
+    [SerializeField] string enemyTag;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -48,13 +52,14 @@ public class PlayerController : MonoBehaviour
 
     void Release()
     {
+        UnStick();
+
         Vector3 _startPoint = Camera.main.ScreenToWorldPoint(startingPoint.position);
         Vector3 _endPoint = Camera.main.ScreenToWorldPoint(endPoint.position);
 
         Vector3 _force = Vector3.ClampMagnitude(_endPoint - _startPoint, maxDragDistance) * forceMultiplier;
         if (rb != null)
             rb.velocity = _force;
-        //canMove = false;
 
         #region Camera Effect 
         if (CameraController.instance != null)
@@ -64,13 +69,50 @@ public class PlayerController : MonoBehaviour
         #endregion
     }
 
+    void Stick(GameObject obj)
+    {
+        if (rb != null)
+        {
+            transform.parent = obj.transform;
+            rb.isKinematic = true;
+            canMove = true;
+        }
+    }
+
+    void UnStick()
+    {
+        if (rb != null)
+        {
+            transform.parent = null;
+            rb.isKinematic = false;
+            canMove = false;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         #region Camera Effect 
         if (CameraController.instance != null)
         {
-            Debug.Log(collision.relativeVelocity.magnitude);
             CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude / cameraMaxImpactOnCollision));
+        }
+        #endregion
+
+        #region Move Check
+        if (collision.gameObject.CompareTag(moveResetTag))
+        {
+            Stick(collision.gameObject);           
+        }
+        #endregion
+
+        #region Game Over Check
+        if (collision.gameObject.CompareTag(enemyTag))
+        {
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.GameOver();
+            }
+            else Debug.LogError("No GameManager found!");
         }
         #endregion
     }
