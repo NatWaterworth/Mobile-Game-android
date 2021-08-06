@@ -1828,10 +1828,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drag: 0
   release: 0
-  forceMultiplier: 5
-  maxDragDistance: 4
+  forceMultiplier: 3.5
+  maxDragDistance: 6
   cameraMaxImpactOnDrag: 0.3
   cameraMaxImpactOnCollision: 40
+  cameraMaxZoomOnRelease: 1
   moveResetTag: Boundary
   enemyTag: Enemy
   deathSplatterEffect: {fileID: 781978603}
@@ -3605,8 +3606,12 @@ MonoBehaviour:
   maxAngleShake: 0
   maxXOffsetShake: 0.15
   maxYOffsetShake: 0.15
-  traumaDampening: 1
-  traumaExponent: 2
+  traumaDampening: 1.2
+  traumaExponent: 1.5
+  minZoom: 6.8
+  maxZoom: 6.3
+  zoompactDampening: 3
+  zoompactExponent: 3
   background: {fileID: 1491313689}
   backgroundOffset: {x: 0, y: 4, z: 0}
 --- !u!20 &519420031
@@ -3636,7 +3641,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.637112
+  orthographic size: 6.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

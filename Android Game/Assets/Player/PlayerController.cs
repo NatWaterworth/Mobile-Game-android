@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float maxDragDistance;
 
     [Header("Camera Shake")]
-    [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision;
+    [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision, cameraMaxZoomOnRelease;
 
     [Header("Trigger Tags")]
     [SerializeField] string moveResetTag;
@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         if (CameraController.instance != null)
         {
             CameraController.instance.ShakeCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxImpactOnDrag);
+            CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance));
         }
         #endregion
     }

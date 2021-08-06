@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// A script that controls the motion of the camera in this 2D mobile platformer.
 /// </summary>
-
+[RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
     [SerializeField] GameObject objectToFollow;
@@ -20,6 +20,12 @@ public class CameraController : MonoBehaviour
     float trauma, shake;
     Vector3 defaultCameraPosition;
     Vector3 defaultCameraRotation;
+
+    [Header("Camera Zoom")]
+    [SerializeField] float minZoom;
+    [SerializeField] float maxZoom;
+    [SerializeField] float zoompactDampening, zoompactExponent;
+    float zoom, zoompact;
 
     [Header("Visuals")]
     [SerializeField] GameObject background;
@@ -48,7 +54,9 @@ public class CameraController : MonoBehaviour
     {
         Follow();
         ReduceTraumaOverTime();
+        ReduceZoompactOverTime();
         ApplyShakeToCamera();
+        Zoom();
     }
 
     void Follow()
@@ -74,6 +82,20 @@ public class CameraController : MonoBehaviour
         trauma = Mathf.Clamp01(trauma);
     }
 
+    void ReduceZoompactOverTime()
+    {
+        zoompact -= Time.deltaTime * zoompactDampening;
+        zoompact = Mathf.Clamp01(zoompact);
+    }
+
+
+    void Zoom()
+    {
+        zoom = Mathf.Lerp(minZoom, maxZoom, Mathf.Pow(zoompact, zoompactExponent));
+        if(GetComponent<Camera>()!=null)
+            GetComponent<Camera>().orthographicSize = zoom;
+    }
+
     void ApplyShakeToCamera()
     {
         shake = Mathf.Pow(trauma, traumaExponent);
@@ -88,6 +110,12 @@ public class CameraController : MonoBehaviour
     {
         trauma += _addedTrauma;
         trauma = Mathf.Clamp01(trauma);
+    }
+
+    public void ZoomCamera(float _addedZoompact)
+    {
+        zoompact += _addedZoompact;
+        zoompact = Mathf.Clamp01(zoompact);
     }
 
 }
