@@ -23,6 +23,7 @@ public class CameraController : MonoBehaviour
 
     [Header("Visuals")]
     [SerializeField] GameObject background;
+    [SerializeField] Vector3 backgroundOffset;
 
     public static CameraController instance;
     float startingXPos;
@@ -59,7 +60,7 @@ public class CameraController : MonoBehaviour
             defaultCameraPosition = new Vector3(newXPosition, newYPosition, transform.position.z);
 
             if (background != null)
-                background.transform.position = new Vector3(background.transform.position.x, objectToFollow.transform.position.y, background.transform.position.z);
+                background.transform.position = new Vector3(background.transform.position.x, objectToFollow.transform.position.y, background.transform.position.z) + backgroundOffset;
 
         }
         transform.position = defaultCameraPosition;

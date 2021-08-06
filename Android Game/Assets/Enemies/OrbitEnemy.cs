@@ -8,6 +8,7 @@ public class OrbitEnemy : MonoBehaviour
     [SerializeField] Transform startPoint, EndPoint;
     [SerializeField] EnemyBehaviour behaviour;
     [SerializeField] float cycleTime;
+    [SerializeField] float cycleOffset;
     public enum EnemyBehaviour
     {
         Loop,
@@ -46,13 +47,13 @@ public class OrbitEnemy : MonoBehaviour
     void Loop()
     {
         if(startPoint !=null && EndPoint != null)
-            transform.position = Vector3.Lerp(startPoint.position, EndPoint.position, Time.time % cycleTime);
+            transform.position = Vector3.Lerp(startPoint.position, EndPoint.position, ((Time.time+ cycleOffset) / cycleTime) % 1);
     }
 
     void PingPong()
     {
         if (startPoint != null && EndPoint != null)
-            transform.position = Vector3.Lerp(startPoint.position, EndPoint.position, (1 + Mathf.Sin(Time.time / cycleTime))/2);
+            transform.position = Vector3.Lerp(startPoint.position, EndPoint.position, (1 + Mathf.Sin((Time.time+ cycleOffset) / cycleTime))/2);
     }
 }
 
