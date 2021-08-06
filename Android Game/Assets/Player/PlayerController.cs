@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 dir = collision.transform.position - transform.position;
             Debug.Log("vel: "+rb.velocity.normalized);
-            //hitEffect.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin();
+            hitEffect.transform.localEulerAngles = new Vector3(0,0,-Vector3.SignedAngle(Vector3.up,dir,Vector3.forward));
             hitEffect.Play();
         }
         #endregion
