@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Controls")]
     Touch startingPoint, endPoint;
     [SerializeField] bool drag, release;
     bool canMove, dead;
@@ -11,12 +12,16 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float forceMultiplier;
     [SerializeField] float maxDragDistance;
+
+    [Header("Camera Shake")]
     [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision;
 
     [Header("Trigger Tags")]
     [SerializeField] string moveResetTag;
     [SerializeField] string enemyTag;
-    
+
+    [Header("Visual Effects")]
+    [SerializeField] ParticleSystem deathSplatterEffect, hitEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -74,11 +79,12 @@ public class PlayerController : MonoBehaviour
     {
         if (rb != null)
         {
-            transform.parent = obj.transform;
-            rb.isKinematic = true;
-
-            if(!IsDead())
+            if (!IsDead())
+            {
+                transform.parent = obj.transform;
+                rb.isKinematic = true;
                 canMove = true;
+            }
         }
     }
 
@@ -99,19 +105,38 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
+        if (dead)
+            return;
+
         dead = true;
 
         #region Death Visual Effects
+        if (deathSplatterEffect != null)
+        {
+            deathSplatterEffect.Play();
+        }
 
+        if (GetComponent<SpriteRenderer>() != null)
+        {
+            GetComponent<SpriteRenderer>().sprite= null;
+        }
         #endregion
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        #region Camera Effect 
+        #region Hit Effects
         if (CameraController.instance != null)
         {
             CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude / cameraMaxImpactOnCollision));
+        }
+
+        if(hitEffect != null)
+        {
+            Vector3 dir = collision.transform.position - transform.position;
+            Debug.Log("vel: "+rb.velocity.normalized);
+            //hitEffect.transform.localEulerAngles = new Vector3(0,0,Mathf.Sin();
+            hitEffect.Play();
         }
         #endregion
 
@@ -125,6 +150,7 @@ public class PlayerController : MonoBehaviour
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
         {
+            
             Die();
 
             if (GameManager.instance != null)
