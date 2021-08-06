@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Touch startingPoint, endPoint;
-    [SerializeField] bool drag, release, canMove;
+    [SerializeField] bool drag, release;
+    bool canMove, dead;
 
     Rigidbody2D rb;
     [SerializeField] float forceMultiplier;
@@ -75,7 +76,9 @@ public class PlayerController : MonoBehaviour
         {
             transform.parent = obj.transform;
             rb.isKinematic = true;
-            canMove = true;
+
+            if(!IsDead())
+                canMove = true;
         }
     }
 
@@ -87,6 +90,20 @@ public class PlayerController : MonoBehaviour
             rb.isKinematic = false;
             canMove = false;
         }
+    }
+
+    bool IsDead()
+    {
+        return dead;
+    }
+
+    void Die()
+    {
+        dead = true;
+
+        #region Death Visual Effects
+
+        #endregion
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -108,6 +125,8 @@ public class PlayerController : MonoBehaviour
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
         {
+            Die();
+
             if (GameManager.instance != null)
             {
                 GameManager.instance.GameOver();

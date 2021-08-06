@@ -133,7 +133,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c485f404f6b79e46bf40f28682b23d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: def494163e522ec459e930d3a71a2f6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   EndPoint: {fileID: 4642008699163112878}
   behaviour: 1
   cycleTime: 1
+  cycleOffset: 0
 --- !u!1 &8734949341485830053
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +198,8 @@ GameObject:
   - component: {fileID: 2967650134180929401}
   m_Layer: 0
   m_Name: EnemyObstacleCycle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: Enemy
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
