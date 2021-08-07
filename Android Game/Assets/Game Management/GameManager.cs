@@ -89,13 +89,12 @@ public class GameManager : MonoBehaviour
 
         while (transitionTime + _duration > Time.unscaledTime)
         {
-            if (currentState.Equals(GameState.Playing))
-            {
-                Time.timeScale = Mathf.Lerp(previousTimescale, _desiredTimescale, Mathf.InverseLerp(transitionTime, transitionTime + _duration, Time.unscaledTime));
-                yield return new WaitForEndOfFrame();
-            }
+           
+            Time.timeScale = Mathf.Lerp(previousTimescale, _desiredTimescale, Mathf.InverseLerp(transitionTime, transitionTime + _duration, Time.unscaledTime));
+            yield return new WaitForSecondsRealtime(0.02f);
+            
         }
-
+        Time.timeScale = _desiredTimescale;
         yield return null;
 
     }
