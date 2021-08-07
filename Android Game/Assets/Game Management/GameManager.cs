@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameState currentState;
     [SerializeField] UIManager uiManager;
+    [SerializeField] CameraController cameraController;
 
     //Time Variables
     [Header("Time")]
@@ -108,9 +109,11 @@ public class GameManager : MonoBehaviour
             case GameState.GameOver:
                 uiManager.SetState(UIManager.UIState.GameOverMenu);
                 SlowDownToPause(pauseTimeOnGameOver);
+                
                 break;
             case GameState.MainMenu:
-                uiManager.SetState(UIManager.UIState.MainMenu);            
+                uiManager.SetState(UIManager.UIState.MainMenu);
+                cameraController.ResetCamera();
                 break;
             case GameState.Paused:
                 uiManager.SetState(UIManager.UIState.PauseMenu);
@@ -119,6 +122,7 @@ public class GameManager : MonoBehaviour
             case GameState.Playing:
                 uiManager.SetState(UIManager.UIState.HUD);
                 PauseGame(false);
+                cameraController.SetToPlaying();
                 break;
         }
         currentState = _state;

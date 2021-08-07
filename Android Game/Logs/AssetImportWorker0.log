@@ -15,11 +15,11 @@ D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54284
+61591
 Successfully changed project path to: D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
 D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 121.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 90.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -36,22 +36,22 @@ Initialize mono
 Mono path[0] = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005731 seconds.
+Registered in 0.003924 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 64.08 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 68.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.384 seconds
+- Completed reload, in  2.509 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003367 seconds.
+Registered in 0.003519 seconds.
 Begin MonoManager ReloadAssembly
 Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
@@ -86,735 +86,366 @@ Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Ed
 0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
 
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.38 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.446 seconds
+- Completed reload, in  1.465 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.4 MB.
-System memory in use after: 131.6 MB.
+Unloading 3091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.7 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3518.
-Total: 3.610200 ms (FindLiveObjects: 0.411500 ms CreateObjectMapping: 0.175400 ms MarkObjects: 2.946500 ms  DeleteObjects: 0.075700 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/resource_default
-  artifactKey: Guid(e6131c58805b49749b1d4099358577f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/resource_default using Guid(e6131c58805b49749b1d4099358577f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dd812b2e613213d89e4d5a495c1afe') in 0.014867 seconds
-  Import took 0.158496 seconds .
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3531.
+Total: 2.037400 ms (FindLiveObjects: 0.236300 ms CreateObjectMapping: 0.130500 ms MarkObjects: 1.622000 ms  DeleteObjects: 0.047700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.414158 seconds.
-  path: Assets/UI
-  artifactKey: Guid(e6131c58805b49749b1d4099358577f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI using Guid(e6131c58805b49749b1d4099358577f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7db9eb249d8c154487b11dd7ce05cf9') in 0.007081 seconds
-  Import took 0.032416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.563332 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Clear.png
-  artifactKey: Guid(3a5e8891f2923774a85531558c8005cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Clear.png using Guid(3a5e8891f2923774a85531558c8005cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5538cfad7a4549a3864571e02ac61bb2') in 0.286420 seconds
-  Import took 0.309707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Clear.png
-  artifactKey: Guid(772b0cd266fef2b429dcf590bc1bccb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Clear.png using Guid(772b0cd266fef2b429dcf590bc1bccb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d5c468e0d8b5a867a343abf1e0af32') in 0.093084 seconds
-  Import took 0.129083 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Dark.png
-  artifactKey: Guid(27c2d07dd5e0ec948a6cbd78ce4080e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Dark.png using Guid(27c2d07dd5e0ec948a6cbd78ce4080e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cc994055ce502bbb83152cb771cca4') in 0.102253 seconds
-  Import took 0.115221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Medium.png
-  artifactKey: Guid(bf624ed64a2fdb9448a6f28e05480f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Medium.png using Guid(bf624ed64a2fdb9448a6f28e05480f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cc1c870e965df2ce597eb584d0dd3e') in 0.078797 seconds
-  Import took 0.140340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Dark.png
-  artifactKey: Guid(2ff71f7733b8db64ea07a5bcec4df49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Dark.png using Guid(2ff71f7733b8db64ea07a5bcec4df49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9710e993294beb4be446279fca6d22') in 0.073295 seconds
-  Import took 0.077969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Medium.png
-  artifactKey: Guid(1873bde2e46e2b1429147363470859de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Medium.png using Guid(1873bde2e46e2b1429147363470859de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c9ed5217da9045c3626f5e4a4c69aa') in 0.080756 seconds
-  Import took 0.109105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Icy.png
-  artifactKey: Guid(aef08b8754fc43f4ba6acd9d806fbf83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Icy.png using Guid(aef08b8754fc43f4ba6acd9d806fbf83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2a926d9de99a52e70b0b2daaf8495a') in 0.105931 seconds
-  Import took 0.142084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Clear.png
-  artifactKey: Guid(cc1210d54a3bc5a4f8fa7f230586331e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Clear.png using Guid(cc1210d54a3bc5a4f8fa7f230586331e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a215f6a7e49d5b87322c0bb5213adc67') in 0.062782 seconds
-  Import took 0.093972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Snowy.png
-  artifactKey: Guid(b732529a33cd41b41839fe126634f987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Snowy.png using Guid(b732529a33cd41b41839fe126634f987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd384a3ce7101414770718267ea1a79') in 0.101154 seconds
-  Import took 0.112995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Normal.png
-  artifactKey: Guid(f52a6fe5cfbacf441b013634439350cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Normal.png using Guid(f52a6fe5cfbacf441b013634439350cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea4402e7c2b209f9e7e25aa00c818ad') in 0.128836 seconds
-  Import took 0.142521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Medium.png
-  artifactKey: Guid(20dd435d4ba7edc4794d1a4d3de98d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Medium.png using Guid(20dd435d4ba7edc4794d1a4d3de98d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd618b0ecfac668e364d4a8e2f1057055') in 0.135869 seconds
-  Import took 0.174349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Dark.png
-  artifactKey: Guid(7861318fd412503409e57b8e03eb4763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring3_Dark.png using Guid(7861318fd412503409e57b8e03eb4763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc288ef33344b9cc7aa3935bb5fa39cc') in 0.116122 seconds
-  Import took 0.141984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/2DPlatformerCartoonPack/Lights/Torch2.png
-  artifactKey: Guid(2d54c0b415004d940b7ae6a5064ec1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Lights/Torch2.png using Guid(2d54c0b415004d940b7ae6a5064ec1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe022f46f798d611970cafb5a0a6278') in 0.047055 seconds
-  Import took 0.078329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Medium.png
-  artifactKey: Guid(67e3c9c2fae2e9444b57f6d40a87c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Medium.png using Guid(67e3c9c2fae2e9444b57f6d40a87c21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e854fc8223eb2c0bcde0bc995ea715') in 0.058832 seconds
-  Import took 0.084619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/2DPlatformerCartoonPack/Lights/Torch3.png
-  artifactKey: Guid(0eaed0fc4ba87d7479b142e1c7944c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Lights/Torch3.png using Guid(0eaed0fc4ba87d7479b142e1c7944c48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51477797040ebed1acb3ba5d39f5ae77') in 0.067145 seconds
-  Import took 0.107906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Medium.png
-  artifactKey: Guid(cf3cd8bdb93d73a4b8062a6c1edd372b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Medium.png using Guid(cf3cd8bdb93d73a4b8062a6c1edd372b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24436d6081ffd4fb70707009762e145') in 0.068783 seconds
-  Import took 0.092030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Coins/Wood.png
-  artifactKey: Guid(c7739d7f36366e9419eb96578be329e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Coins/Wood.png using Guid(c7739d7f36366e9419eb96578be329e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50ed7ff5f2a5d2c13b18069c76cce57') in 0.057468 seconds
-  Import took 0.061641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Icy.png
-  artifactKey: Guid(1107b5028e6339e48817878f8ec8a81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Icy.png using Guid(1107b5028e6339e48817878f8ec8a81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06aaacdb6b40ef83dc07300dfbf4a1f') in 0.066032 seconds
-  Import took 0.098609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Dark.png
-  artifactKey: Guid(bfc0f4ca4f30eaa4f9a19ed2f6b11a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Dark.png using Guid(bfc0f4ca4f30eaa4f9a19ed2f6b11a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d8cfe6e90443a65ceac11442fe4f88') in 0.072611 seconds
-  Import took 0.102556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Icy.png
-  artifactKey: Guid(4b15c69be40356d44b99488f748a1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Icy.png using Guid(4b15c69be40356d44b99488f748a1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e26902418c09e9269111e976c2ddf5a') in 0.050826 seconds
-  Import took 0.066568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Snowy.png
-  artifactKey: Guid(f9910f619916987468d78bca06a28767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter2_Snowy.png using Guid(f9910f619916987468d78bca06a28767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd97f9eddfea4974faa75c26475f4de2') in 0.053386 seconds
-  Import took 0.088425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Dark.png
-  artifactKey: Guid(1645f1165958354488528a607955e087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Dark.png using Guid(1645f1165958354488528a607955e087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178b34b30d4590e4ac4dd0985fdb1a3b') in 0.056960 seconds
-  Import took 0.076622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Medium.png
-  artifactKey: Guid(e2c09feddd4fe0d4996d71cfb47af7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Medium.png using Guid(e2c09feddd4fe0d4996d71cfb47af7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f55433827f8c4a7a1d0b8c91a806d4') in 0.075955 seconds
-  Import took 0.100946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Normal.png
-  artifactKey: Guid(4d809d5ed0f6d7b4b82087a9332542db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Normal.png using Guid(4d809d5ed0f6d7b4b82087a9332542db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7c64cc7249295e323830b4fd25c739') in 0.065814 seconds
-  Import took 0.084882 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Medium.png
-  artifactKey: Guid(e68913f43b5297d4fab81695d7e99ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Medium.png using Guid(e68913f43b5297d4fab81695d7e99ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e867af3e357fe79f125d8f1484c32942') in 0.038013 seconds
-  Import took 0.062781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Blue.png
-  artifactKey: Guid(8631c1415f0613b48ae4418e820c7614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Blue.png using Guid(8631c1415f0613b48ae4418e820c7614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3952d988dbe23414560d1d3e206c23') in 0.070963 seconds
-  Import took 0.094651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Medium.png
-  artifactKey: Guid(b6a0542436fa5be4ea556cf3d040de5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Medium.png using Guid(b6a0542436fa5be4ea556cf3d040de5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0dd69119ae6e5a8e8c3c092bd20f03') in 0.057268 seconds
-  Import took 0.242646 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Clear.png
-  artifactKey: Guid(49a90749dc9cb2d4eac00a07c2b462fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Clear.png using Guid(49a90749dc9cb2d4eac00a07c2b462fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76bfdbb30961a74387400f08c3178275') in 0.064251 seconds
-  Import took 0.087591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Normal.png
-  artifactKey: Guid(41197915a3c595e429958c2342daf0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Normal.png using Guid(41197915a3c595e429958c2342daf0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d639e2e5a3bd655285216191857f960') in 0.058119 seconds
-  Import took 0.071732 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_3.png
-  artifactKey: Guid(aa56490c4697855409087b198f531e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_3.png using Guid(aa56490c4697855409087b198f531e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03bf118933907b884bcf2518df6b3bd') in 0.049781 seconds
-  Import took 0.071485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Medium.png
-  artifactKey: Guid(b67d4cd2c40f29345abd94b97ea82353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Medium.png using Guid(b67d4cd2c40f29345abd94b97ea82353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6753769e04d658503da47da4ba9b9561') in 0.050747 seconds
-  Import took 0.088321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Dark.png
-  artifactKey: Guid(5faf3430996a80149bde422fa28b4c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Dark.png using Guid(5faf3430996a80149bde422fa28b4c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01955b632f3a7cad60c2082258649731') in 0.073870 seconds
-  Import took 0.094924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Red.png
-  artifactKey: Guid(7e1c5e37b1ab17846a1b83ad2991c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Red.png using Guid(7e1c5e37b1ab17846a1b83ad2991c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4d670d1bb95b4ebe60883239deeb08') in 0.051083 seconds
-  Import took 0.054874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Normal.png
-  artifactKey: Guid(6d839b87ab0464a4180c39579af561a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Normal.png using Guid(6d839b87ab0464a4180c39579af561a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18629de3faaf2d8eb0d6860dead34331') in 0.078616 seconds
-  Import took 0.106933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Normal.png
-  artifactKey: Guid(5c86d027691698243ac9946ff7141de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Normal.png using Guid(5c86d027691698243ac9946ff7141de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9bae940c42c2f56e8da0b34fd3f2899') in 0.040932 seconds
-  Import took 0.071988 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/2DPlatformerCartoonPack/Lights/Torch1.png
-  artifactKey: Guid(ba48f560aca709b4191a85b8bffd28b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Lights/Torch1.png using Guid(ba48f560aca709b4191a85b8bffd28b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0aaeca5a51c5450c1cbbff0d04222c3') in 0.067493 seconds
-  Import took 0.084979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Clear.png
-  artifactKey: Guid(996d82e6c0f406147807752dec9e3c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Clear.png using Guid(996d82e6c0f406147807752dec9e3c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c70dcaad77e4610cdcd97a6103e652') in 0.073046 seconds
-  Import took 0.077049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Keys/Wood.png
-  artifactKey: Guid(cafe42e7736b29f4a922addc76f336c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Keys/Wood.png using Guid(cafe42e7736b29f4a922addc76f336c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20072069716d221cb9274b40b4557a1') in 0.047961 seconds
-  Import took 0.069071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Dark.png
-  artifactKey: Guid(43a331402b51a63429627646ee0f6704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Dark.png using Guid(43a331402b51a63429627646ee0f6704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091d4998755d7f214cf56e5a1c35c60f') in 0.093816 seconds
-  Import took 0.119604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Medium.png
-  artifactKey: Guid(d9064c973d77a8f4ab0f84741e8d3a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Medium.png using Guid(d9064c973d77a8f4ab0f84741e8d3a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03db0fa054e3fd1c17b5d52846a9908d') in 0.053338 seconds
-  Import took 0.083712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Dark.png
-  artifactKey: Guid(69abcb72d7f134148a52fe18a96bbce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Watermelon_Dark.png using Guid(69abcb72d7f134148a52fe18a96bbce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a9045844d855f37569b660a59996b2') in 0.051767 seconds
-  Import took 0.065000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Icy.png
-  artifactKey: Guid(09e3cb927d110b24c82c5f453f8d3295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Icy.png using Guid(09e3cb927d110b24c82c5f453f8d3295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110d225595972ea61e59a1374b925329') in 0.041990 seconds
-  Import took 0.061544 seconds .
+  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Medium.png
+  artifactKey: Guid(e6935c176d06d3c48a0d0155899a3600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Medium.png using Guid(e6935c176d06d3c48a0d0155899a3600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd074388c5e0ad74bf1001ae22108dc5') in 0.144762 seconds
+  Import took 0.172034 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000245 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Dark.png
-  artifactKey: Guid(fec7d9159d2705c4db7278d22394f8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Dark.png using Guid(fec7d9159d2705c4db7278d22394f8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8208f214577abca798e479379ff458a2') in 0.069162 seconds
-  Import took 0.100788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Dark.png
-  artifactKey: Guid(216fb18055573e744acdc22cecd7bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer3_Dark.png using Guid(216fb18055573e744acdc22cecd7bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355f407f00fc1fd27433b1d211b09290') in 0.088840 seconds
-  Import took 0.110190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Clear.png
-  artifactKey: Guid(9ccec191403c511439be7f05407e18fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Clear.png using Guid(9ccec191403c511439be7f05407e18fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3ab3042ddaca0f0b91e9701f3a819d') in 0.051873 seconds
-  Import took 0.070785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Dark.png
-  artifactKey: Guid(3a66b3100a4a84b4b95cb6d7061d327d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Dark.png using Guid(3a66b3100a4a84b4b95cb6d7061d327d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcf2e4cd832ccc0012e27dd93365a48') in 0.103891 seconds
-  Import took 0.125181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Clear.png
-  artifactKey: Guid(4a5e7ca6ec789a44c9085b2b2b2dbb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring2_Clear.png using Guid(4a5e7ca6ec789a44c9085b2b2b2dbb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5634157985735ed01c60fdec09771d0') in 0.047752 seconds
-  Import took 0.096462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Clear.png
-  artifactKey: Guid(8a1dc07aa6f0e0847ae2c6f5f5999aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer2_Clear.png using Guid(8a1dc07aa6f0e0847ae2c6f5f5999aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf7a87c01bfcdedfaa904faac6e5dd3') in 0.070361 seconds
-  Import took 0.074460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Normal.png
-  artifactKey: Guid(5dbad060d33f383418795a94d3869a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Normal.png using Guid(5dbad060d33f383418795a94d3869a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29ba7fbbd03e3ec4d0c8cd6a29986dc') in 0.046587 seconds
-  Import took 0.087502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Icy.png
-  artifactKey: Guid(a2ab768188d8fff408d66900761e60dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter3_Icy.png using Guid(a2ab768188d8fff408d66900761e60dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4493f3e2ad07af79b540e791ee8316ba') in 0.101499 seconds
-  Import took 0.114173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Snowy.png
-  artifactKey: Guid(48644de94dd11364aaf9b6fcfaaa2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter4_Snowy.png using Guid(48644de94dd11364aaf9b6fcfaaa2ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4063e62fa4c7539002c98aeb8bbba7fa') in 0.056519 seconds
-  Import took 0.077806 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Clear.png
-  artifactKey: Guid(dc3961c4c05a70e47a33eca74e5870da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Clear.png using Guid(dc3961c4c05a70e47a33eca74e5870da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5012fb6e4e1197126b59f301399f62d2') in 0.062748 seconds
-  Import took 0.066603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/2DPlatformerCartoonPack/Lights/Torch4.png
-  artifactKey: Guid(d7cd76dad8ae3e841bb1edd176276514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Lights/Torch4.png using Guid(d7cd76dad8ae3e841bb1edd176276514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667f466765a7af857b29309342865a15') in 0.045083 seconds
-  Import took 0.070656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Freezing.png
-  artifactKey: Guid(454ba676aca2ca04a8d564f0184e5af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter1_Freezing.png using Guid(454ba676aca2ca04a8d564f0184e5af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd3ed2eea6f3d8da43c706eadaad711') in 0.053601 seconds
-  Import took 0.068959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Medium.png
-  artifactKey: Guid(fea11ab6c433f0441a71295a9a7a88d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring4_Medium.png using Guid(fea11ab6c433f0441a71295a9a7a88d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c99a1008a49c49ad03adaa30ab5231') in 0.059877 seconds
-  Import took 0.078937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Dark.png
-  artifactKey: Guid(88fea79d02221ca48b295d4af3019b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Dark.png using Guid(88fea79d02221ca48b295d4af3019b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91192a4723b6422b189cbcff599dc6d') in 0.068927 seconds
-  Import took 0.081360 seconds .
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern4_Hanging.png
+  artifactKey: Guid(02bea93a2b806c946a904e440e7ed31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern4_Hanging.png using Guid(02bea93a2b806c946a904e440e7ed31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40877c3a5ff66ec7c95dc582f8d60108') in 0.089838 seconds
+  Import took 0.108732 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000252 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_1.png
-  artifactKey: Guid(6e438011e6d4342408ae6932ad240157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_1.png using Guid(6e438011e6d4342408ae6932ad240157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d54e2e28cc55fb6acff6606e0f35d54') in 0.049332 seconds
-  Import took 0.089465 seconds .
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern4_Fixed.png
+  artifactKey: Guid(c37ffdf1935bb494fa2f54214d7c4dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern4_Fixed.png using Guid(c37ffdf1935bb494fa2f54214d7c4dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a113d58ed45c537c62b3d8a8af2ff676') in 0.048066 seconds
+  Import took 0.077588 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Clear.png
-  artifactKey: Guid(c8defa241e183024db7641d4ad7b2bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer4_Clear.png using Guid(c8defa241e183024db7641d4ad7b2bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87572f3d0306edb340c6bddf156ace41') in 0.048867 seconds
-  Import took 0.071524 seconds .
+  Time since last request: 0.000156 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern2_Fixed.png
+  artifactKey: Guid(2580fc3ea9579914c89bfdb2039c9b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern2_Fixed.png using Guid(2580fc3ea9579914c89bfdb2039c9b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420189a5ac3590c86e9e36b391a8286f') in 0.063244 seconds
+  Import took 0.067664 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/2DPlatformerCartoonPack/Collectibles/Coins/Wood_Anim.png
-  artifactKey: Guid(acad2d6b761b1b841bfce8b9610059ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Collectibles/Coins/Wood_Anim.png using Guid(acad2d6b761b1b841bfce8b9610059ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44062dff3b17ac6e7374eefaa3e83a17') in 0.063071 seconds
-  Import took 0.067214 seconds .
+  Time since last request: 0.000172 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern2_Simple.png
+  artifactKey: Guid(17007920090f53646b860b0cc94a6597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern2_Simple.png using Guid(17007920090f53646b860b0cc94a6597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13804a20ed2bf1a95c54084d7d14c9bd') in 0.052601 seconds
+  Import took 0.071764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern3_Hanging.png
+  artifactKey: Guid(7afae8fdb90396247857418356e4e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern3_Hanging.png using Guid(7afae8fdb90396247857418356e4e3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1120f1836f49cda24b46602143d331d1') in 0.053504 seconds
+  Import took 0.057985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/2DPlatformerCartoonPack/Collectibles/Gems/LightBlue.png
+  artifactKey: Guid(162cef05079093d43bc1fc454e570d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Collectibles/Gems/LightBlue.png using Guid(162cef05079093d43bc1fc454e570d94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f848a2fd015208e4fdf55544510553') in 0.033800 seconds
+  Import took 0.038290 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000189 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Dark.png
-  artifactKey: Guid(0ed457b669d11724da14757e77a46493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer2_Dark.png using Guid(0ed457b669d11724da14757e77a46493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cd1653a0260dbdcfdd764b94adb86ba') in 0.045838 seconds
-  Import took 0.066847 seconds .
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern2_Hanging.png
+  artifactKey: Guid(429fe44332200d04bb1796de601553da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern2_Hanging.png using Guid(429fe44332200d04bb1796de601553da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f77098c9950417c28b57d6e3c76ca43') in 0.065639 seconds
+  Import took 0.101036 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Clear.png
-  artifactKey: Guid(16179837451d1684d8c2859373b2d726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring2_Clear.png using Guid(16179837451d1684d8c2859373b2d726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9565dc5212afaf5d03b51907bc809855') in 0.056840 seconds
-  Import took 0.077749 seconds .
+  Time since last request: 0.000142 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern3_Fixed.png
+  artifactKey: Guid(c1f0d11c50da71d46bde0917e90cf1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern3_Fixed.png using Guid(c1f0d11c50da71d46bde0917e90cf1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3616461fc54fde180a704154f4818bc') in 0.073405 seconds
+  Import took 0.091584 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Clear.png
-  artifactKey: Guid(460d65356c3f1e14d8aea68571bbb764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Summer1_Clear.png using Guid(460d65356c3f1e14d8aea68571bbb764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ffd2dceaa90a36ffaaf662013498a86') in 0.072516 seconds
-  Import took 0.091530 seconds .
+  Time since last request: 0.000192 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern3_Simple.png
+  artifactKey: Guid(78236d0acccc33341bfda926a4257fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern3_Simple.png using Guid(78236d0acccc33341bfda926a4257fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7894fc7e548bdd6cafa493f765d1e40') in 0.042563 seconds
+  Import took 0.046850 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Clear.png
-  artifactKey: Guid(25e4686a6d289a3429d3c0e7547c3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Clear.png using Guid(25e4686a6d289a3429d3c0e7547c3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcfac25e4edb5dff0e932acb88aa611f') in 0.060027 seconds
-  Import took 0.094658 seconds .
+  Time since last request: 0.000146 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern4_Simple.png
+  artifactKey: Guid(6a1d675e72867554abada61af1d7ebf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern4_Simple.png using Guid(6a1d675e72867554abada61af1d7ebf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ad087687b44dc9aa589cd9b8b238b9') in 0.080847 seconds
+  Import took 0.132032 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_2.png
-  artifactKey: Guid(337d2f58e6489ea4bbbd748ac482d477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Weathercock_2.png using Guid(337d2f58e6489ea4bbbd748ac482d477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746c1106dc9b49dfc5e92ff431e8279e') in 0.051210 seconds
-  Import took 0.076057 seconds .
+  Time since last request: 0.000147 seconds.
+  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Dark.png
+  artifactKey: Guid(300abcf04795c5d4d80c81733f0938d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Dark.png using Guid(300abcf04795c5d4d80c81733f0938d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd34391b29069049b5b76eeedb7d83df') in 0.052943 seconds
+  Import took 0.058077 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Clear.png
-  artifactKey: Guid(3a5e8891f2923774a85531558c8005cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Spring1_Clear.png using Guid(3a5e8891f2923774a85531558c8005cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5538cfad7a4549a3864571e02ac61bb2') in 0.016697 seconds
-  Import took 0.020683 seconds .
+  Time since last request: 0.000218 seconds.
+  path: Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Clear.png
+  artifactKey: Guid(c119d9cfb509f9f42aa69700494465d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Collectibles/Fruits/Lemon_Clear.png using Guid(c119d9cfb509f9f42aa69700494465d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d3acf4011797a4f3e7e3ea9ea592ae') in 0.335211 seconds
+  Import took 0.350961 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Medium.png
-  artifactKey: Guid(fc5b40d8f08f014479b9fdda793a04ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Summer1_Medium.png using Guid(fc5b40d8f08f014479b9fdda793a04ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c79c21e8f27d9976b4db7a8d9db067') in 0.088365 seconds
-  Import took 0.103095 seconds .
+  Time since last request: 0.000267 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern1_Hanging.png
+  artifactKey: Guid(0d69c0dec80c5784789f3a0de0c9d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern1_Hanging.png using Guid(0d69c0dec80c5784789f3a0de0c9d136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9dbdaea8de04cf2b6025b890d111ee') in 0.095725 seconds
+  Import took 0.240257 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Freezing.png
-  artifactKey: Guid(01d329c32f9db954a891751f9c3fa9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Freezing.png using Guid(01d329c32f9db954a891751f9c3fa9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c55485a9d9071be4fb76c0c7638ffec') in 0.083908 seconds
-  Import took 0.098827 seconds .
+  Time since last request: 0.000187 seconds.
+  path: Assets/2DPlatformerCartoonPack/Lights/Lantern1_Simple.png
+  artifactKey: Guid(a1e9a4bd23591ce4b93e1e7fed9fc574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DPlatformerCartoonPack/Lights/Lantern1_Simple.png using Guid(a1e9a4bd23591ce4b93e1e7fed9fc574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8b819762bb0da28455a5f9487798f9') in 0.118398 seconds
+  Import took 0.122617 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Medium.png
-  artifactKey: Guid(0dd556211aa4c7443813eab3ff5e0365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Spring1_Medium.png using Guid(0dd556211aa4c7443813eab3ff5e0365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ec3e5b9038c63032251c5ea46cac74') in 0.049133 seconds
-  Import took 0.086553 seconds .
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 9.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 72.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Snowy.png
-  artifactKey: Guid(2023c6b427c231d4aaf36b7c6246cb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Trees/Winter1_Snowy.png using Guid(2023c6b427c231d4aaf36b7c6246cb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a6d7c39522e50e83a968cf9a8b87c4') in 0.095020 seconds
-  Import took 0.178136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Green.png
-  artifactKey: Guid(17c8c4fb0dfdae34c8df96c55103c34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Miscellaneous/Umbrella_Green.png using Guid(17c8c4fb0dfdae34c8df96c55103c34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6ab89334759d58b97d0cf5e0d5232d') in 0.061278 seconds
-  Import took 0.065661 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Icy.png
-  artifactKey: Guid(e2d121d224e0e4a4aa6ef9b040de8e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DPlatformerCartoonPack/Props/Grass/Winter2_Icy.png using Guid(e2d121d224e0e4a4aa6ef9b040de8e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2c871cf5880d681be8ed219d24fb14') in 0.060683 seconds
-  Import took 0.064903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.756926 seconds.
-  path: Assets/Editor
-  artifactKey: Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor using Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20337e47b751246eb11693e9b66b30e1') in 0.007447 seconds
-  Import took 0.012208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.944017 seconds.
-  path: Assets/Editor/com.unity.mobile.notifications
-  artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195a4ad76822529d64fe906f6e55ad82') in 0.006199 seconds
-  Import took 0.026235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.156011 seconds.
-  path: Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset
-  artifactKey: Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset using Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb676434d5eb25319a9dcd72e258bc4') in 0.011204 seconds
-  Import took 0.026031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.360895 seconds.
-  path: Assets/Enemies/EnemyBladePingPong.prefab
-  artifactKey: Guid(ccf4ceb5d1eea9e419e3fce90a757fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemyBladePingPong.prefab using Guid(ccf4ceb5d1eea9e419e3fce90a757fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd943dcd70a6f4080301a32e68d71423f') in 0.075055 seconds
-  Import took 0.079554 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Enemies/EnemyObstacleCycle.prefab
-  artifactKey: Guid(942453da7d786f04faab858f35ee3965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemyObstacleCycle.prefab using Guid(942453da7d786f04faab858f35ee3965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bab1638ed428d2ff9f8604c260fd37') in 0.045182 seconds
-  Import took 0.070429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Enemies/EnemyObstacle.prefab
-  artifactKey: Guid(505b08fd57b61da4e90ffd1982f6518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemies/EnemyObstacle.prefab using Guid(505b08fd57b61da4e90ffd1982f6518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33accacc472e5057c79f744a5f32ee5c') in 0.015537 seconds
-  Import took 0.032827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.327892 seconds.
-  path: Assets/LeanTween
-  artifactKey: Guid(9dad500e3fdeb6a4486d279a6ccefc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LeanTween using Guid(9dad500e3fdeb6a4486d279a6ccefc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f197d8796c4d1c1e0c92c06de133e00d') in 0.005810 seconds
-  Import took 0.029724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.839782 seconds.
-  path: Assets/readme.txt
-  artifactKey: Guid(d7d61ddb5679c4646a1bf46acc9771ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/readme.txt using Guid(d7d61ddb5679c4646a1bf46acc9771ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d512095367b0238609e2c0aa259657') in 0.009933 seconds
-  Import took 0.014547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005736 seconds.
-  path: Assets/readme.txt
-  artifactKey: Guid(d7d61ddb5679c4646a1bf46acc9771ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/readme.txt using Guid(d7d61ddb5679c4646a1bf46acc9771ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d512095367b0238609e2c0aa259657') in 0.003223 seconds
-  Import took 0.007612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.639631 seconds.
-  path: Assets/easy UI emerald - default.unity
-  artifactKey: Guid(b1c56176553646c429757732476a41c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/easy UI emerald - default.unity using Guid(b1c56176553646c429757732476a41c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bee5674f6ef5154baf9d0a948a8293b') in 0.005594 seconds
-  Import took 0.030513 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.327509 seconds.
-  path: Assets/Fonts
-  artifactKey: Guid(915ce5156410df74bb01abe6f3e16b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts using Guid(915ce5156410df74bb01abe6f3e16b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc82a8c0be5a49576bba09dfb5bffda') in 0.005694 seconds
-  Import took 0.027350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034182 seconds.
-  path: Assets/Fonts/foo.ttf
-  artifactKey: Guid(bd1cbc719cb89e44c8777ed600f1cfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/foo.ttf using Guid(bd1cbc719cb89e44c8777ed600f1cfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b0dd5ea7dd936e070d49c74df61a8a') in 0.044331 seconds
-  Import took 0.067260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 102.999203 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bf6b68aa035cf4907911a8faabbee9') in 0.040814 seconds
-  Import took 0.046079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003154 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bf6b68aa035cf4907911a8faabbee9') in 0.013439 seconds
-  Import took 0.018230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.951992 seconds.
-  path: Assets/Fonts/Cartoon.asset
-  artifactKey: Guid(91b312b51a7b28147a6ddffd4c1790b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/Cartoon.asset using Guid(91b312b51a7b28147a6ddffd4c1790b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
- -> (artifact id: '81b02359394af8c868ec88bf2693ad30') in 0.039748 seconds
-  Import took 0.061236 seconds .
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3537.
+Total: 2.611000 ms (FindLiveObjects: 0.281000 ms CreateObjectMapping: 0.148000 ms MarkObjects: 2.163200 ms  DeleteObjects: 0.017600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003339 seconds.
+Registered in 0.003396 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.886 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3012 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.3 MB.
+System memory in use after: 132.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3540.
+Total: 2.163600 ms (FindLiveObjects: 0.242000 ms CreateObjectMapping: 0.139400 ms MarkObjects: 1.762800 ms  DeleteObjects: 0.018700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003315 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.6 MB.
+System memory in use after: 132.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3543.
+Total: 2.314600 ms (FindLiveObjects: 0.272000 ms CreateObjectMapping: 0.137800 ms MarkObjects: 1.889000 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003066 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.942 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.3 MB.
+System memory in use after: 133.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 2.142100 ms (FindLiveObjects: 0.247700 ms CreateObjectMapping: 0.135600 ms MarkObjects: 1.741900 ms  DeleteObjects: 0.016100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003094 seconds.
 Begin MonoManager ReloadAssembly
 Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
 0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
@@ -867,15 +498,1239 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.002 seconds
+- Completed reload, in  0.941 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.6 MB.
+System memory in use after: 133.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3549.
+Total: 2.324600 ms (FindLiveObjects: 0.283900 ms CreateObjectMapping: 0.200700 ms MarkObjects: 1.821300 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003305 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3025 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.5 MB.
-System memory in use after: 133.2 MB.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.3 MB.
+System memory in use after: 133.5 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3571.
-Total: 2.152300 ms (FindLiveObjects: 0.254000 ms CreateObjectMapping: 0.134600 ms MarkObjects: 1.563900 ms  DeleteObjects: 0.198900 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3552.
+Total: 2.113800 ms (FindLiveObjects: 0.228300 ms CreateObjectMapping: 0.118100 ms MarkObjects: 1.751500 ms  DeleteObjects: 0.015200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003354 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.6 MB.
+System memory in use after: 133.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3555.
+Total: 2.135400 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.144600 ms MarkObjects: 1.721400 ms  DeleteObjects: 0.016500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003290 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.947 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.2 MB.
+System memory in use after: 133.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3558.
+Total: 2.032100 ms (FindLiveObjects: 0.236100 ms CreateObjectMapping: 0.121800 ms MarkObjects: 1.657600 ms  DeleteObjects: 0.015600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003304 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.954 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3561.
+Total: 2.072400 ms (FindLiveObjects: 0.248700 ms CreateObjectMapping: 0.125400 ms MarkObjects: 1.682000 ms  DeleteObjects: 0.015600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003355 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.2 MB.
+System memory in use after: 133.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3564.
+Total: 2.935800 ms (FindLiveObjects: 0.303100 ms CreateObjectMapping: 0.184200 ms MarkObjects: 2.429800 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003253 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.013 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3567.
+Total: 2.387900 ms (FindLiveObjects: 0.316200 ms CreateObjectMapping: 0.152700 ms MarkObjects: 1.901000 ms  DeleteObjects: 0.017100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003234 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3570.
+Total: 2.456900 ms (FindLiveObjects: 0.334600 ms CreateObjectMapping: 0.214000 ms MarkObjects: 1.889600 ms  DeleteObjects: 0.017600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003335 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.6 MB.
+System memory in use after: 133.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3573.
+Total: 2.483800 ms (FindLiveObjects: 0.275600 ms CreateObjectMapping: 0.151300 ms MarkObjects: 2.037600 ms  DeleteObjects: 0.017900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003252 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3576.
+Total: 2.367400 ms (FindLiveObjects: 0.286400 ms CreateObjectMapping: 0.165000 ms MarkObjects: 1.899100 ms  DeleteObjects: 0.016100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003881 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.100 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.6 MB.
+System memory in use after: 133.8 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3579.
+Total: 2.486700 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.134500 ms MarkObjects: 2.041200 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003170 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.048 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3582.
+Total: 2.278400 ms (FindLiveObjects: 0.301500 ms CreateObjectMapping: 0.126500 ms MarkObjects: 1.833500 ms  DeleteObjects: 0.016300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003501 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3585.
+Total: 2.165400 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.157000 ms MarkObjects: 1.726000 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003360 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.145 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.8 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3588.
+Total: 2.873300 ms (FindLiveObjects: 0.333900 ms CreateObjectMapping: 0.182400 ms MarkObjects: 2.302800 ms  DeleteObjects: 0.053000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003393 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.148 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3591.
+Total: 2.346300 ms (FindLiveObjects: 0.302800 ms CreateObjectMapping: 0.154500 ms MarkObjects: 1.831600 ms  DeleteObjects: 0.056600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003220 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.8 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3594.
+Total: 2.746300 ms (FindLiveObjects: 0.608800 ms CreateObjectMapping: 0.262800 ms MarkObjects: 1.834400 ms  DeleteObjects: 0.039500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003402 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.137 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3597.
+Total: 2.558400 ms (FindLiveObjects: 0.305400 ms CreateObjectMapping: 0.189500 ms MarkObjects: 2.044400 ms  DeleteObjects: 0.018000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003234 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.157 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.8 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3600.
+Total: 2.097900 ms (FindLiveObjects: 0.238400 ms CreateObjectMapping: 0.119000 ms MarkObjects: 1.724700 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004918 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c92f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff60c942fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff60cb08c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff60cb11069 (Unity) StackWalker::ShowCallstack
+0x00007ff60dfe564c (Unity) GetStacktrace
+0x00007ff60f0a4803 (Unity) DebugStringToFile
+0x00007ff60c94bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff60c94330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff60c94a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff60dcf43a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff60dcf484e (Unity) LoadUserAssemblies
+0x00007ff60e117f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff60e1e20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff60e1e4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff60e1e79be (Unity) asio::io_service::run
+0x00007ff60e15dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff60e15dda0 (Unity) RunAssetImporterV2
+0x00007ff60d67d73b (Unity) Application::InitializeProject
+0x00007ff60dff2be2 (Unity) WinMain
+0x00007ff60fe38fc6 (Unity) __scrt_common_main_seh
+0x00007ffea0d77c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffea2a2d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.335 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.3 MB.
+System memory in use after: 133.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3603.
+Total: 2.448500 ms (FindLiveObjects: 0.275600 ms CreateObjectMapping: 0.152700 ms MarkObjects: 1.989200 ms  DeleteObjects: 0.030000 ms)
 

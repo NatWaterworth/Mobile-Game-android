@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(RectTransform))]
 public class UIObject : MonoBehaviour
 {
+    [SerializeField] float duration;
+    [SerializeField] LeanTweenType easeType;
+    [SerializeField] float delay;
+    [SerializeField] float moveX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +19,11 @@ public class UIObject : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        if (GetComponent<RectTransform>() != null)
+        {
+            GetComponent<RectTransform>().position -= new Vector3(moveX,0,0);
+            LeanTween.moveX(gameObject, GetComponent<RectTransform>().position.x +moveX, duration).setDelay(delay).setEase(easeType);
+        }
     }
 
 }

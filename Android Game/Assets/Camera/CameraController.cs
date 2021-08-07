@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// A script that controls the motion of the camera in this 2D mobile platformer.
+/// A script that controls the motion of the camera in this 2D mobile platformer. // 1.76 for starting y pos
 /// </summary>
 [RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
+    bool playing;
+
+
     [SerializeField] GameObject objectToFollow;
 
     [SerializeField] float verticalLerpRatio, horizontalLerpRatio;
@@ -20,7 +23,6 @@ public class CameraController : MonoBehaviour
     float trauma, shake;
     Vector3 defaultCameraPosition;
     Vector3 defaultCameraRotation;
-    [SerializeField] [Tooltip("The number of frames used to calculate how much to shake screen per second.")]int baseFramesPerSecond= 30;
 
     [Header("Camera Zoom")]
     [SerializeField] float minZoom;
@@ -34,6 +36,7 @@ public class CameraController : MonoBehaviour
 
     public static CameraController instance;
     float startingXPos;
+    Vector3 startingPosition;
 
     private void Awake()
     {
@@ -48,12 +51,15 @@ public class CameraController : MonoBehaviour
             Destroy(gameObject);
         }
         startingXPos = transform.position.x;
+        startingPosition = transform.position;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        Follow();
+        if (playing) 
+            Follow();
+
         ReduceTraumaOverTime();
         ReduceZoompactOverTime();
         ApplyShakeToCamera();
@@ -120,4 +126,14 @@ public class CameraController : MonoBehaviour
         zoompact = Mathf.Clamp01(zoompact);
     }
 
+    public void  SetToPlaying()
+    {
+        playing = true;
+    }
+
+    public void ResetCamera()
+    {
+        playing = false;
+        transform.position = startingPosition;
+    }
 }
