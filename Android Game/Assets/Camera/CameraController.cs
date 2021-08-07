@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
     float trauma, shake;
     Vector3 defaultCameraPosition;
     Vector3 defaultCameraRotation;
+    [SerializeField] [Tooltip("The number of frames used to calculate how much to shake screen per second.")]int baseFramesPerSecond= 30;
 
     [Header("Camera Zoom")]
     [SerializeField] float minZoom;
@@ -99,7 +100,8 @@ public class CameraController : MonoBehaviour
     void ApplyShakeToCamera()
     {
         shake = Mathf.Pow(trauma, traumaExponent);
-        transform.position += new Vector3(Random.Range(-1.0f, 1.0f) * maxXOffsetShake, Random.Range(-1.0f, 1.0f) * maxYOffsetShake, 0)* shake;
+        //if( Time.frameCount % Mathf.FloorToInt(1 / Time.timeScale) <= );
+        transform.position += new Vector3(Random.Range(-1.0f, 1.0f) * maxXOffsetShake, Random.Range(-1.0f, 1.0f) * maxYOffsetShake, 0)* shake*Time.deltaTime;
     }
 
     /// <summary>

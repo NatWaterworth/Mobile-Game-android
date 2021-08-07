@@ -316,7 +316,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1643006569}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -539,7 +539,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1643006569}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3608,6 +3608,7 @@ MonoBehaviour:
   maxYOffsetShake: 0.15
   traumaDampening: 1.2
   traumaExponent: 1.5
+  baseFramesPerSecond: 30
   minZoom: 6.8
   maxZoom: 6.3
   zoompactDampening: 3
@@ -5647,7 +5648,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1643006569}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8967,6 +8968,7 @@ GameObject:
   - component: {fileID: 1643006568}
   - component: {fileID: 1643006567}
   - component: {fileID: 1643006566}
+  - component: {fileID: 1643006570}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9047,9 +9049,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1559617179}
-  - {fileID: 961952721}
   - {fileID: 57287577}
   - {fileID: 22671113}
+  - {fileID: 961952721}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9058,6 +9060,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1643006570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643006565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd588b7947960394e9f48ca3fcd84e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiStateScreens:
+  - {fileID: 1559617178}
+  - {fileID: 57287576}
+  - {fileID: 22671112}
+  - {fileID: 961952720}
+  currentState: 0
 --- !u!1001 &1667684591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9676,6 +9696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7aa36be881d80448e469f0d8b489c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
+  uiManager: {fileID: 1643006570}
 --- !u!4 &1848288387
 Transform:
   m_ObjectHideFlags: 0
