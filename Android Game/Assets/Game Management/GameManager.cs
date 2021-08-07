@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("Game Over!");
         SwitchState(GameState.GameOver);
 
     }
@@ -50,8 +49,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Timescale: " + Time.timeScale);
     }
+
+    #region Time Related Functions
 
     void PauseGame(bool _paused)
     {
@@ -86,7 +87,7 @@ public class GameManager : MonoBehaviour
         transitionTime = Time.unscaledTime; // set timestamp
         previousTimescale = Time.timeScale; // set starting timescale
 
-        while (transitionTime + _duration < Time.unscaledTime)
+        while (transitionTime + _duration > Time.unscaledTime)
         {
             if (currentState.Equals(GameState.Playing))
             {
@@ -99,17 +100,18 @@ public class GameManager : MonoBehaviour
 
     }
 
+    #endregion
+
     void SwitchState(GameState _state)
     {
         switch (_state)
         {
             case GameState.GameOver:
                 uiManager.SetState(UIManager.UIState.GameOverMenu);
-                PauseGame(true);
+                SlowDownToPause(pauseTimeOnGameOver);
                 break;
             case GameState.MainMenu:
-                uiManager.SetState(UIManager.UIState.MainMenu);
-                SlowDownToPause(pauseTimeOnGameOver);
+                uiManager.SetState(UIManager.UIState.MainMenu);            
                 break;
             case GameState.Paused:
                 uiManager.SetState(UIManager.UIState.PauseMenu);

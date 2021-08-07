@@ -9698,6 +9698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 1
   uiManager: {fileID: 1643006570}
+  pauseTimeOnGameOver: 2
 --- !u!4 &1848288387
 Transform:
   m_ObjectHideFlags: 0

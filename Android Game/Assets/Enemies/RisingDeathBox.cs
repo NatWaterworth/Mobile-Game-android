@@ -60,7 +60,6 @@ public class RisingDeathBox : MonoBehaviour
         {
             if(collision.attachedRigidbody.velocity.magnitude > splashVelocity)
             {
-                Debug.Log("Splash : " + collision.attachedRigidbody.velocity.magnitude);
                 float _size = Mathf.Lerp(minSplashSize, maxSplashSize, Mathf.InverseLerp(splashVelocity, maxSplashVelocity, collision.attachedRigidbody.velocity.magnitude));
                 Splash(_size);
             }
