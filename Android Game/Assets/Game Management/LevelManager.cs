@@ -43,7 +43,7 @@ public class LevelManager : MonoBehaviour
     /// <returns></returns>
     public float GetLevelProgress()
     {
-        float progress = Mathf.Clamp01( Mathf.InverseLerp(startpoint.position.y, endpoint.position.y, player.transform.position.y)) - levelProgress;
+        float progress = Mathf.Clamp01( Mathf.InverseLerp(startpoint.position.y, endpoint.position.y, player.transform.position.y) - levelProgress);
         levelProgress += progress;
         return Mathf.Max(0, progress);
     }

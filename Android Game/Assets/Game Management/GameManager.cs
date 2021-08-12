@@ -119,8 +119,9 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-
+        SwitchState(GameState.MainMenu);
     }
+
     public void RestartGame()
     {
         score = 0;
@@ -159,6 +160,7 @@ public class GameManager : MonoBehaviour
             case GameState.MainMenu:
                 if (uiManager != null)
                     uiManager.SetState(UIManager.UIState.MainMenu);
+                PauseGame(true);
                 cameraController.ResetCamera();
                 break;
             case GameState.Paused:

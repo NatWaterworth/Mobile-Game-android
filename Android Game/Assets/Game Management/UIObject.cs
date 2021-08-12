@@ -22,7 +22,7 @@ public class UIObject : MonoBehaviour
         if (GetComponent<RectTransform>() != null)
         {
             GetComponent<RectTransform>().position -= new Vector3(moveX,0,0);
-            LeanTween.moveX(gameObject, GetComponent<RectTransform>().position.x +moveX, duration).setDelay(delay).setEase(easeType);
+            LeanTween.moveX(gameObject, GetComponent<RectTransform>().position.x +moveX, duration).setDelay(delay).setEase(easeType).setIgnoreTimeScale(true);
         }
     }
 

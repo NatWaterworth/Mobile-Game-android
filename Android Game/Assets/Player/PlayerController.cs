@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Visual Effects")]
     [SerializeField] ParticleSystem deathSplatterEffect, hitEffect;
+    [SerializeField] GameObject splatter;
     Sprite playerBodySprite;
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,7 @@ public class PlayerController : MonoBehaviour
              GetComponent<SpriteRenderer>().sprite = playerBodySprite;
         }
         dead = false;
-        rb.isKinematic = true;
+        rb.isKinematic = false;
         canMove = true;
         transform.parent = null;
 
@@ -100,10 +101,19 @@ public class PlayerController : MonoBehaviour
             if (!IsDead())
             {
                 transform.parent = obj.transform;
-                rb.isKinematic = true;
+                //rb.isKinematic = true;
+                rb.velocity = Vector2.zero;
+                rb.gravityScale = 0;
                 canMove = true;
             }
         }
+    }
+
+    void SpawnHitSplatter(Vector3 _hitPoint, Transform _parent)
+    {
+        GameObject _splatter = Instantiate(splatter, _hitPoint, Quaternion.Euler(0,0,Random.Range(0,360.0f)), null);
+        _splatter.transform.parent = _parent;
+        Destroy(_splatter, 5);
     }
 
     void UnStick()
@@ -111,7 +121,7 @@ public class PlayerController : MonoBehaviour
         if (rb != null)
         {
             transform.parent = null;
-            rb.isKinematic = false;
+            rb.gravityScale = 1;
             canMove = false;
         }
     }
@@ -126,8 +136,9 @@ public class PlayerController : MonoBehaviour
         if (dead)
             return;
 
-        dead = true;
 
+        dead = true;
+        UnStick();
         #region Death Visual Effects
         if (deathSplatterEffect != null)
         {
@@ -139,6 +150,12 @@ public class PlayerController : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite= null;
         }
         #endregion
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.GameOver();
+        }
+        else Debug.LogError("No GameManager found!");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -155,9 +172,12 @@ public class PlayerController : MonoBehaviour
             hitEffect.transform.localEulerAngles = new Vector3(0,0,-Vector3.SignedAngle(Vector3.up,dir,Vector3.forward));
             hitEffect.Play();
         }
+
+        if (splatter != null)
+            SpawnHitSplatter(collision.GetContact(0).point, collision.transform);
         #endregion
 
-        #region Move Check
+            #region Move Check
         if (collision.gameObject.CompareTag(moveResetTag))
         {
             Stick(collision.gameObject);           
@@ -166,15 +186,8 @@ public class PlayerController : MonoBehaviour
 
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
-        {
-            
-            Die();
-
-            if (GameManager.instance != null)
-            {
-                GameManager.instance.GameOver();
-            }
-            else Debug.LogError("No GameManager found!");
+        {      
+            Die();        
         }
         #endregion
     }
@@ -184,14 +197,7 @@ public class PlayerController : MonoBehaviour
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
         {
-
-            Die();
-
-            if (GameManager.instance != null)
-            {
-                GameManager.instance.GameOver();
-            }
-            else Debug.LogError("No GameManager found!");
+            Die();  
         }
         #endregion
     }
