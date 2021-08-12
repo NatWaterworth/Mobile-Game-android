@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameState currentState;
     [SerializeField] UIManager uiManager;
     [SerializeField] CameraController cameraController;
+    [SerializeField] LevelManager levelManager;
 
     //Time Variables
     [Header("Time")]
@@ -16,6 +17,12 @@ public class GameManager : MonoBehaviour
     float transitionTime; //for timestamping the slowdown effect.
     float previousTimescale;
     Coroutine timeTransitionCoroutine;
+
+    [Header("Score")]
+    [SerializeField] int scorePerLevel;
+    [SerializeField] float scorePerLevelExponent;
+    float highScore, score;
+
     
 
     public enum GameState
@@ -50,7 +57,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Timescale: " + Time.timeScale);
+        if (currentState.Equals(GameState.Playing))
+        {
+            if (levelManager != null)
+            {
+                score += scorePerLevel * levelManager.GetLevelProgress();
+                if (uiManager != null)
+                    uiManager.UpdatePlayerScore(Mathf.RoundToInt( score));
+            }
+        }
     }
 
     #region Time Related Functions
@@ -102,25 +117,58 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public void GoToMainMenu()
+    {
+
+    }
+    public void RestartGame()
+    {
+        score = 0;
+        UpdateScore();
+        levelManager.RestartLevel();
+        cameraController.ResetCamera();
+
+        StopAlteringTime();
+        SwitchState(GameState.Playing);
+
+    }
+
+    void UpdateScore()
+    {
+        highScore = Mathf.Max(score, highScore);
+        uiManager.UpdatePlayerHighScore(Mathf.RoundToInt(highScore));
+        uiManager.UpdatePlayerScore(Mathf.RoundToInt(score));
+    }
+
     void SwitchState(GameState _state)
     {
         switch (_state)
         {
             case GameState.GameOver:
-                uiManager.SetState(UIManager.UIState.GameOverMenu);
+                if (uiManager != null)
+                {
+                    uiManager.SetState(UIManager.UIState.GameOverMenu);
+                    UpdateScore();
+                }
+                if (levelManager != null)
+                    levelManager.LevelTransition();
+
                 SlowDownToPause(pauseTimeOnGameOver);
                 
                 break;
             case GameState.MainMenu:
-                uiManager.SetState(UIManager.UIState.MainMenu);
+                if (uiManager != null)
+                    uiManager.SetState(UIManager.UIState.MainMenu);
                 cameraController.ResetCamera();
                 break;
             case GameState.Paused:
-                uiManager.SetState(UIManager.UIState.PauseMenu);
+                if (uiManager != null)
+                    uiManager.SetState(UIManager.UIState.PauseMenu);
                 PauseGame(true);
                 break;
             case GameState.Playing:
-                uiManager.SetState(UIManager.UIState.HUD);
+                if (uiManager != null)
+                    uiManager.SetState(UIManager.UIState.HUD);
                 PauseGame(false);
                 cameraController.SetToPlaying();
                 break;

@@ -22,11 +22,15 @@ public class PlayerController : MonoBehaviour
 
     [Header("Visual Effects")]
     [SerializeField] ParticleSystem deathSplatterEffect, hitEffect;
-
+    Sprite playerBodySprite;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (GetComponent<SpriteRenderer>() != null)
+        {
+           playerBodySprite = GetComponent<SpriteRenderer>().sprite;
+        }
     }
 
     // Update is called once per frame
@@ -34,6 +38,19 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
             UpdateTouchControl();
+    }
+
+    public void ResetPlayer()
+    {
+        if (GetComponent<SpriteRenderer>() != null)
+        {
+             GetComponent<SpriteRenderer>().sprite = playerBodySprite;
+        }
+        dead = false;
+        rb.isKinematic = true;
+        canMove = true;
+        transform.parent = null;
+
     }
 
 
@@ -151,6 +168,23 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag(enemyTag))
         {
             
+            Die();
+
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.GameOver();
+            }
+            else Debug.LogError("No GameManager found!");
+        }
+        #endregion
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        #region Game Over Check
+        if (collision.gameObject.CompareTag(enemyTag))
+        {
+
             Die();
 
             if (GameManager.instance != null)
