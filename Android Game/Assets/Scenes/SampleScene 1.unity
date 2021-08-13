@@ -2290,6 +2290,7 @@ MonoBehaviour:
   cameraMaxImpactOnDrag: 0.3
   cameraMaxImpactOnCollision: 40
   cameraMaxZoomOnRelease: 1
+  cameraZoomOnDrag: 3
   moveResetTag: Boundary
   enemyTag: Enemy
   deathSplatterEffect: {fileID: 781978603}
@@ -4279,7 +4280,7 @@ MonoBehaviour:
   maxMultiplier: 2
   timeToReachMaxSpeed: 30
   targetObject: {fileID: 241671646}
-  transitionTargetDistance: 30
+  transitionTargetDistance: 35
   splashEffect: {fileID: 876837244}
   splashVelocity: 5
   maxSplashVelocity: 20
@@ -4674,9 +4675,9 @@ MonoBehaviour:
   traumaDampening: 1.2
   traumaExponent: 1.5
   minZoom: 6.8
-  maxZoom: 6.3
-  zoompactDampening: 3
-  zoompactExponent: 3
+  maxZoom: 6.1
+  zoompactDampening: 2.5
+  zoompactExponent: 2.5
   background: {fileID: 1491313689}
   backgroundOffset: {x: 0, y: 4, z: 0}
 --- !u!20 &519420031
@@ -10699,7 +10700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1559617179
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12679,7 +12680,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 296.6}
-  m_SizeDelta: {x: 357.2, y: 100}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1892714301
 MonoBehaviour:
@@ -12744,8 +12745,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66
-  m_fontSizeBase: 66
+  m_fontSize: 97.6
+  m_fontSizeBase: 97.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

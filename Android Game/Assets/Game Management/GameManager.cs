@@ -119,6 +119,8 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        levelManager.RestartLevel();
+        cameraController.ResetCamera();
         SwitchState(GameState.MainMenu);
     }
 

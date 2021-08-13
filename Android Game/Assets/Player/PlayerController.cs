@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float maxDragDistance;
 
     [Header("Camera Shake")]
-    [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision, cameraMaxZoomOnRelease;
+    [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision, cameraMaxZoomOnRelease, cameraZoomOnDrag;
 
     [Header("Trigger Tags")]
     [SerializeField] string moveResetTag;
@@ -63,8 +63,13 @@ public class PlayerController : MonoBehaviour
             {
                 startingPoint = Input.touches[0];
                 drag = true;
-            }
+            }   
             endPoint = Input.touches[0];
+
+            if (CameraController.instance != null)
+            {
+                CameraController.instance.ZoomCamera(Mathf.Clamp01((endPoint.position - startingPoint.position).magnitude / maxDragDistance) * cameraZoomOnDrag * Time.deltaTime);
+            }
         }
         else if (drag)
         {
@@ -148,6 +153,13 @@ public class PlayerController : MonoBehaviour
         if (GetComponent<SpriteRenderer>() != null)
         {
             GetComponent<SpriteRenderer>().sprite= null;
+        }
+        #endregion
+
+        #region Camera Effect 
+        if (CameraController.instance != null)
+        {
+            CameraController.instance.ShakeCamera(1);
         }
         #endregion
 
