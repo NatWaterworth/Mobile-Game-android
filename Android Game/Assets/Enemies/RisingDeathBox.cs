@@ -24,8 +24,7 @@ public class RisingDeathBox : MonoBehaviour
     float startingTime;
 
     [SerializeField] GameObject targetObject;
-    [SerializeField] float transitionTargetDistance;
-    float transitionTargetHeight;
+    [SerializeField] float transitionTargetDistance, transitionExponent;
 
     [Header("Splash")]
     [SerializeField] ParticleSystem splashEffect;
@@ -80,8 +79,8 @@ public class RisingDeathBox : MonoBehaviour
 
     void Transition()
     {
-        float distance = Mathf.Max(0, targetObject.transform.position.y + transitionTargetHeight - (2 * transform.position.y));
-        transform.position += new Vector3(0, Mathf.Lerp(0, transitionSpeed, Mathf.InverseLerp(minTransitionDistance,maxTransitionDistance, distance)), 0) * Time.deltaTime;
+        float distance = Mathf.Max(0, transitionTargetDistance +  (targetObject.transform.position.y - transform.position.y));
+        transform.position += new Vector3(0, Mathf.Pow(distance, transitionExponent), 0) * Time.deltaTime;
     }
 
     public void TransitionWater()
@@ -89,7 +88,6 @@ public class RisingDeathBox : MonoBehaviour
         currentState = DeathBoxState.Transition;
         if (GetComponent<Collider>() != null)
             GetComponent<Collider>().enabled = false;
-        transitionTargetHeight = transitionTargetDistance + transform.position.y;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
         if (CameraController.instance != null)
         {
             CameraController.instance.ShakeCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxImpactOnDrag);
-            CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance));
+            CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance)* cameraMaxZoomOnRelease);
         }
         #endregion
     }
@@ -198,7 +198,12 @@ public class PlayerController : MonoBehaviour
 
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
-        {      
+        {
+            if (CameraController.instance != null)
+            {
+                CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude));
+                CameraController.instance.ZoomCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude));
+            }
             Die();        
         }
         #endregion
