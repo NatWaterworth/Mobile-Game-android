@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 4016319860390868164}
   - component: {fileID: 4016319860390868187}
   - component: {fileID: 8791512680111688749}
+  - component: {fileID: 5599529445070041177}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -190,7 +191,7 @@ MonoBehaviour:
   startPoint: {fileID: 4016319860689408409}
   EndPoint: {fileID: 4016319859832482039}
   behaviour: 1
-  cycleTime: 1
+  cycleTime: 0.5
   cycleOffset: 0
 --- !u!331 &8791512680111688749
 SpriteMask:
@@ -242,6 +243,27 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!50 &5599529445070041177
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4016319860390868167}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4016319860689408408
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Controls")]
     Touch startingPoint, endPoint;
-    [SerializeField] bool drag, release;
+    [SerializeField] bool drag;
     bool canMove, dead;
 
     Rigidbody2D rb;
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         rb.isKinematic = false;
         canMove = true;
         transform.parent = null;
-
+        drag = false;
     }
 
 
