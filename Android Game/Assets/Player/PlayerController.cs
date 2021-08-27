@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject _splatter = Instantiate(splatter, _hitPoint, Quaternion.Euler(0,0,Random.Range(0,360.0f)), null);
         _splatter.transform.parent = _parent;
-        Destroy(_splatter, 5);
+        Destroy(_splatter, 4);
     }
 
     void UnStick()

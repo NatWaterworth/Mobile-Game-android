@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float levelPartSize;
     [SerializeField] float levelHeight;
     [SerializeField] [Range(0.1f,10f)]float levelScale;
+    [SerializeField] int levelVisualIndex;
 
     int activatedTimes = 1;
     const int levelPartsActiveAnytime = 4; //The number of active parts at any point  
@@ -40,10 +41,12 @@ public class LevelManager : MonoBehaviour
         levelHeight = Mathf.Max(levelPartSize * levelPartsActiveAnytime, levelHeight);
         levelPartDeactivator.SetLevelManager(this);
 
-        SpawnLevelAssets();
-        if(generateLevel)
-            GenerateInitialLevel();
+        
 
+        SpawnLevelAssets();
+        if (generateLevel)
+            GenerateInitialLevel();
+        SetLevelVisuals();
     }
 
     /// <summary>
@@ -210,5 +213,24 @@ public class LevelManager : MonoBehaviour
     {
         if (risingWater != null)
             risingWater.TransitionWater();
+    }
+
+    public void SetLevelVisuals()
+    {
+
+        VisualModifier[] visualModifiers = FindObjectsOfType<VisualModifier>(true);
+
+        foreach(VisualModifier vis in visualModifiers)
+        {
+            vis.SetSprite(levelVisualIndex);
+        }
+
+        Plant[] plants = FindObjectsOfType<Plant>(true);
+
+        foreach (Plant plant in plants)
+        {
+            plant.SetRandomSprite(levelVisualIndex);
+        }
+
     }
 }

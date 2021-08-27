@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5719844148873548220}
   - component: {fileID: 5719844148873548221}
+  - component: {fileID: 2682961830038785285}
   m_Layer: 0
   m_Name: Plateform4_Right
   m_TagString: Untagged
@@ -177,6 +178,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2682961830038785285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719844148873548223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc34670468420a4394468f95566407b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f0e2d2aa30fb0ac42bb763d22dfebe0a, type: 3}
+  - {fileID: 21300000, guid: 0559010e154ec9e4ebfc5f14bd72b588, type: 3}
+  - {fileID: 21300000, guid: fa015e26e213b914ca25ac94ba36b0d9, type: 3}
+  - {fileID: 21300000, guid: dd00744cbf6567944b3635b63bb1bc44, type: 3}
+  - {fileID: 21300000, guid: 0f19a5de002f16740aa501df61f950e7, type: 3}
 --- !u!1 &5719844149294725477
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5719844149294725474}
   - component: {fileID: 5719844149294725475}
+  - component: {fileID: 2579158994227908131}
   m_Layer: 0
   m_Name: Plateform4_Right (1)
   m_TagString: Untagged
@@ -259,6 +279,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2579158994227908131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719844149294725477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc34670468420a4394468f95566407b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f0e2d2aa30fb0ac42bb763d22dfebe0a, type: 3}
+  - {fileID: 21300000, guid: 0559010e154ec9e4ebfc5f14bd72b588, type: 3}
+  - {fileID: 21300000, guid: fa015e26e213b914ca25ac94ba36b0d9, type: 3}
+  - {fileID: 21300000, guid: dd00744cbf6567944b3635b63bb1bc44, type: 3}
+  - {fileID: 21300000, guid: 0f19a5de002f16740aa501df61f950e7, type: 3}
 --- !u!1001 &7804606359045445569
 PrefabInstance:
   m_ObjectHideFlags: 0
