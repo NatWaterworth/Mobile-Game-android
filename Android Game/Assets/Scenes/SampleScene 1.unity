@@ -12766,7 +12766,7 @@ MonoBehaviour:
   levelPartSize: 15.1
   levelHeight: 200
   levelScale: 0.4
-  levelVisualIndex: 1
+  levelVisualIndex: 4
   lightingManager: {fileID: 293050738}
   ppManager: {fileID: 1891216921}
 --- !u!1 &1871686378

@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 public class PostProcessManager : MonoBehaviour
 {
     [SerializeField] Volume ppVolume;
-    [SerializeField] float vingetteIntensityIncrease, vignetteIntensity;
+    [SerializeField] float vingetteIntensityIncrease, vignetteIntensity, vignetteRateOfChange;
     //Post Processing Overrides
     Vignette vignette; //Adjusted when drag and release player
     ChromaticAberration chromaticAberration; //Coroutine on aquiring item
@@ -16,7 +16,7 @@ public class PostProcessManager : MonoBehaviour
     ColorAdjustments colorGrading; //Corotuine on aquiring an item.
 
     //Coroutines to adjust Post Processing Overrides at runtime
-    Coroutine currentEffect, portalEffect, vingetteEffect;
+    Coroutine currentEffect, portalEffect, vignetteEffect;
 
 
     // Start is called before the first frame update
@@ -65,13 +65,45 @@ public class PostProcessManager : MonoBehaviour
     public void StartVingetteEffect()
     {
         if (vignette != null)
-            vignette.intensity.value = vignetteIntensity + vingetteIntensityIncrease;
+        {
+            if (vignetteEffect != null)
+                StopCoroutine(vignetteEffect);
+
+            vignetteEffect = StartCoroutine(VignetteEffectOn());
+        }
     }
+
+
 
     public void EndVingetteEffect()
     {
-        if(vignette!=null)
-            vignette.intensity.value = vignetteIntensity;
+        if (vignette != null)
+        {
+            if (vignetteEffect != null)
+                StopCoroutine(vignetteEffect);
+
+            vignetteEffect = StartCoroutine(VignetteEffectOff());
+        }
+    }
+
+    IEnumerator VignetteEffectOn()
+    {
+        while (vignette.intensity.value < vignetteIntensity + vingetteIntensityIncrease)
+        {
+            vignette.intensity.value += (vingetteIntensityIncrease * vignetteRateOfChange);
+            yield return new WaitForEndOfFrame();
+        }
+        vignette.intensity.value = vignetteIntensity + vingetteIntensityIncrease;
+    }
+
+    IEnumerator VignetteEffectOff()
+    {
+        while (vignette.intensity.value > vignetteIntensity)
+        {
+            vignette.intensity.value -= (vingetteIntensityIncrease * vignetteRateOfChange);
+            yield return new WaitForEndOfFrame();
+        }
+        vignette.intensity.value = vignetteIntensity;
     }
 
 }

@@ -69,6 +69,11 @@ public class LevelManager : MonoBehaviour
         //Spawn Roof
         float _height = levelScale * levelPartSize * Mathf.CeilToInt(levelHeight / (levelScale * levelPartSize));
         roof.SetupAsset(startpoint.position + new Vector3(0, _height, 0), Quaternion.identity, Vector3.one * levelScale);
+        Portal _portal = roof.GetComponentInChildren<Portal>();
+
+        if (_portal != null)
+            _portal.SetLevelManager(this);
+
     }
     /// <summary>
     /// Spawns a part of the level.
@@ -181,6 +186,16 @@ public class LevelManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Sets next level for player to traverse.
+    /// </summary>
+    public void StartNextLevel()
+    {
+        levelVisualIndex++;
+
+        RestartLevel(false);
+        SetLevelVisuals();
+    }
 
     /// <summary>
     /// Return the increase in progress for the current level.
@@ -193,7 +208,7 @@ public class LevelManager : MonoBehaviour
         return Mathf.Max(0, progress);
     }
 
-    public void RestartLevel()
+    public void RestartLevel(bool _resetEntirely)
     {
         if(risingWater!=null)
             risingWater.RestartRisingDeathBox();
@@ -209,6 +224,9 @@ public class LevelManager : MonoBehaviour
         GenerateInitialLevel();
 
         levelProgress = 0;
+
+        if (_resetEntirely)
+            levelVisualIndex = 0;
 
     }
 

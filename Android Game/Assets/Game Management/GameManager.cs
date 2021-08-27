@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        levelManager.RestartLevel();
+        levelManager.RestartLevel(true);
         cameraController.ResetCamera();
         SwitchState(GameState.MainMenu);
     }
@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
     {
         score = 0;
         UpdateScore();
-        levelManager.RestartLevel();
+        levelManager.RestartLevel(true);
         cameraController.ResetCamera();
 
         StopAlteringTime();
