@@ -31,6 +31,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float levelHeight;
     [SerializeField] [Range(0.1f,10f)]float levelScale;
     [SerializeField] int levelVisualIndex;
+    [SerializeField] LightingManager lightingManager;
 
     int activatedTimes = 1;
     const int levelPartsActiveAnytime = 4; //The number of active parts at any point  
@@ -232,5 +233,8 @@ public class LevelManager : MonoBehaviour
             plant.SetRandomSprite(levelVisualIndex);
         }
 
+        //Set lighting
+        if (lightingManager != null)
+            lightingManager.SetGlobalLighting(levelVisualIndex);
     }
 }

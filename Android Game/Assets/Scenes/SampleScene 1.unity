@@ -2229,6 +2229,7 @@ Transform:
   - {fileID: 781978600}
   - {fileID: 1220187486558019091}
   - {fileID: 964259506}
+  - {fileID: 1775404762}
   m_Father: {fileID: 1363925813}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2425,6 +2426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293050736}
   - component: {fileID: 293050737}
+  - component: {fileID: 293050738}
   m_Layer: 0
   m_Name: Global Light 2D
   m_TagString: Untagged
@@ -2487,6 +2489,29 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &293050738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293050735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b474c1017f9b40545853233debf7a294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSettings:
+  - color: {r: 1, g: 1, b: 1, a: 1}
+    intensity: 1
+  - color: {r: 1, g: 0.9875087, b: 0.9386792, a: 1}
+    intensity: 1.1
+  - color: {r: 1, g: 0.9372549, b: 0.7490196, a: 1}
+    intensity: 0.95
+  - color: {r: 0.49803922, g: 0.627451, b: 0.9529412, a: 1}
+    intensity: 0.75
+  - color: {r: 0.7882353, g: 0.53333336, b: 1, a: 1}
+    intensity: 0.45
 --- !u!1 &301071515
 GameObject:
   m_ObjectHideFlags: 0
@@ -12142,6 +12167,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1775404761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775404762}
+  - component: {fileID: 1775404763}
+  m_Layer: 0
+  m_Name: Point Light 2D (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1775404762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775404761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.554759, y: 3.554759, z: 3.554759}
+  m_Children: []
+  m_Father: {fileID: 241671651}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775404763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775404761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 1
+  m_Color: {r: 1, g: 0.75, b: 0.75, a: 1}
+  m_Intensity: 0.2
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.7
+  m_PointLightOuterRadius: 3
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1001 &1803413572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12611,8 +12708,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f8401a5e78dfab1488b28b3711749f66, type: 3}
   - {fileID: 21300000, guid: f7497fbbf0c46564cb340a55c4cd9a96, type: 3}
   nightSprites:
-  - {fileID: 21300000, guid: 8f90117d9609ac448bfd66cdd92114e6, type: 3}
   - {fileID: 21300000, guid: 01d329c32f9db954a891751f9c3fa9f5, type: 3}
+  - {fileID: 21300000, guid: a644c8482708f4a4ab5798ef6d5c6a68, type: 3}
   - {fileID: 21300000, guid: 5c86d027691698243ac9946ff7141de0, type: 3}
   - {fileID: 21300000, guid: f67bbf7e7cc71e844924471402819461, type: 3}
   - {fileID: 21300000, guid: ddeb7462ad241924699fdd5e37547f42, type: 3}
@@ -12667,7 +12764,8 @@ MonoBehaviour:
   levelPartSize: 15.1
   levelHeight: 200
   levelScale: 0.4
-  levelVisualIndex: 3
+  levelVisualIndex: 4
+  lightingManager: {fileID: 293050738}
 --- !u!1 &1871686378
 GameObject:
   m_ObjectHideFlags: 0
@@ -19823,6 +19921,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 4300783640519025009, guid: 928f8b03d1fbbfc4992950143a62c662, type: 3}
+      propertyPath: m_RootOrder
+      value: 56
+      objectReference: {fileID: 0}
     - target: {fileID: 4338931681956986491, guid: 928f8b03d1fbbfc4992950143a62c662, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
