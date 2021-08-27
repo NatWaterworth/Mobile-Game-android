@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [Header("Visual Effects")]
     [SerializeField] ParticleSystem deathSplatterEffect, hitEffect;
     [SerializeField] GameObject splatter;
+    [SerializeField] PostProcessManager ppManager;
     Sprite playerBodySprite;
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,9 @@ public class PlayerController : MonoBehaviour
             {
                 startingPoint = Input.touches[0];
                 drag = true;
+
+                if (ppManager != null)
+                    ppManager.StartVingetteEffect();
             }   
             endPoint = Input.touches[0];
 
@@ -96,6 +100,9 @@ public class PlayerController : MonoBehaviour
             CameraController.instance.ShakeCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxImpactOnDrag);
             CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance)* cameraMaxZoomOnRelease);
         }
+
+        if (ppManager != null)
+            ppManager.EndVingetteEffect();
         #endregion
     }
 

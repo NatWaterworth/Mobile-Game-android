@@ -2124,6 +2124,7 @@ MonoBehaviour:
   deathSplatterEffect: {fileID: 781978603}
   hitEffect: {fileID: 1220187486538619731}
   splatter: {fileID: 6259116761776953261, guid: 01f490165d6cf404a888093e28acb21a, type: 3}
+  ppManager: {fileID: 1891216921}
 --- !u!50 &241671648
 Rigidbody2D:
   serializedVersion: 4
@@ -4715,7 +4716,6 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
-  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4847,23 +4847,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 9bc0e6aa18c609446950fe403243ad64, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1 &536453332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5181324175707372479, guid: 76a1321a87679a449be40bf49eb74fc3, type: 3}
@@ -12686,7 +12669,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.36114484, y: 1.4604312, z: -4.5403695}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1891216920}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12782,8 +12766,9 @@ MonoBehaviour:
   levelPartSize: 15.1
   levelHeight: 200
   levelScale: 0.4
-  levelVisualIndex: 3
+  levelVisualIndex: 1
   lightingManager: {fileID: 293050738}
+  ppManager: {fileID: 1891216921}
 --- !u!1 &1871686378
 GameObject:
   m_ObjectHideFlags: 0
@@ -13022,6 +13007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1891216920}
   - component: {fileID: 1891216919}
+  - component: {fileID: 1891216921}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -13053,13 +13039,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891216918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3986626, y: 18.030647, z: -18.79564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.7598076, y: 16.570215, z: -14.255272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1848288387}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891216921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891216918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f8c1e88db6a8244b91f64a26a08e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ppVolume: {fileID: 1891216919}
+  vingetteIntensityIncrease: 0.03
+  vignetteIntensity: 0.353
 --- !u!1 &1892714299
 GameObject:
   m_ObjectHideFlags: 0

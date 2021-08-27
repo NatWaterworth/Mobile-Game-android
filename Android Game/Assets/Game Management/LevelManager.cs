@@ -30,8 +30,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float levelPartSize;
     [SerializeField] float levelHeight;
     [SerializeField] [Range(0.1f,10f)]float levelScale;
+
+    [Header("Level Visuals")]
     [SerializeField] int levelVisualIndex;
     [SerializeField] LightingManager lightingManager;
+    [SerializeField] PostProcessManager ppManager;
 
     int activatedTimes = 1;
     const int levelPartsActiveAnytime = 4; //The number of active parts at any point  
@@ -42,8 +45,7 @@ public class LevelManager : MonoBehaviour
         levelHeight = Mathf.Max(levelPartSize * levelPartsActiveAnytime, levelHeight);
         levelPartDeactivator.SetLevelManager(this);
 
-        
-
+        //Setup Level      
         SpawnLevelAssets();
         if (generateLevel)
             GenerateInitialLevel();
