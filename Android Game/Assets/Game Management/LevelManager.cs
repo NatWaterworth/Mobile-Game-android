@@ -192,9 +192,12 @@ public class LevelManager : MonoBehaviour
     public void StartNextLevel()
     {
         levelVisualIndex++;
-
+     
         RestartLevel(false);
-        SetLevelVisuals();
+
+
+        if(ppManager!=null)
+            ppManager.StartPortalEffect(1);
     }
 
     /// <summary>
@@ -227,7 +230,7 @@ public class LevelManager : MonoBehaviour
 
         if (_resetEntirely)
             levelVisualIndex = 0;
-
+        SetLevelVisuals();
     }
 
     public void LevelTransition()

@@ -12764,9 +12764,9 @@ MonoBehaviour:
   enemySpawnChance: 0.385
   generateLevel: 1
   levelPartSize: 15.1
-  levelHeight: 200
+  levelHeight: 10
   levelScale: 0.4
-  levelVisualIndex: 4
+  levelVisualIndex: 0
   lightingManager: {fileID: 293050738}
   ppManager: {fileID: 1891216921}
 --- !u!1 &1871686378
@@ -13059,8 +13059,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ppVolume: {fileID: 1891216919}
-  vingetteIntensityIncrease: 0.03
-  vignetteIntensity: 0.353
+  vingetteIntensityIncrease: 0.06
+  vignetteIntensity: 0.35
+  vignetteRateOfChange: 0.02
 --- !u!1 &1892714299
 GameObject:
   m_ObjectHideFlags: 0
