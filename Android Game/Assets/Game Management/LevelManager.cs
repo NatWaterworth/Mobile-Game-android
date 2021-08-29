@@ -36,6 +36,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] float levelTransitionTime;
     [SerializeField] LightingManager lightingManager;
     [SerializeField] PostProcessManager ppManager;
+    [SerializeField] LevelVisuals visuals;
     Portal portal;
 
     int activatedTimes = 1;
@@ -265,6 +266,7 @@ public class LevelManager : MonoBehaviour
         if (lightingManager != null)
             lightingManager.SetGlobalLighting(levelVisualIndex);
 
-
+        if (visuals != null)
+            visuals.SetLevelVisuals(levelVisualIndex);
     }
 }
