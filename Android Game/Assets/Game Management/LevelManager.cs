@@ -33,8 +33,10 @@ public class LevelManager : MonoBehaviour
 
     [Header("Level Visuals")]
     [SerializeField] int levelVisualIndex;
+    [SerializeField] float levelTransitionTime;
     [SerializeField] LightingManager lightingManager;
     [SerializeField] PostProcessManager ppManager;
+    Portal portal;
 
     int activatedTimes = 1;
     const int levelPartsActiveAnytime = 4; //The number of active parts at any point  
@@ -69,10 +71,10 @@ public class LevelManager : MonoBehaviour
         //Spawn Roof
         float _height = levelScale * levelPartSize * Mathf.CeilToInt(levelHeight / (levelScale * levelPartSize));
         roof.SetupAsset(startpoint.position + new Vector3(0, _height, 0), Quaternion.identity, Vector3.one * levelScale);
-        Portal _portal = roof.GetComponentInChildren<Portal>();
+        portal = roof.GetComponentInChildren<Portal>();
 
-        if (_portal != null)
-            _portal.SetLevelManager(this);
+        if (portal != null)
+            portal.SetLevelManager(this);
 
     }
     /// <summary>
@@ -191,13 +193,13 @@ public class LevelManager : MonoBehaviour
     /// </summary>
     public void StartNextLevel()
     {
+
+        if (ppManager != null && portal != null)
+            ppManager.StartPortalEffect(levelTransitionTime, portal.GetPortalColour(levelVisualIndex));
+
         levelVisualIndex++;
      
         RestartLevel(false);
-
-
-        if(ppManager!=null)
-            ppManager.StartPortalEffect(1);
     }
 
     /// <summary>
@@ -256,8 +258,13 @@ public class LevelManager : MonoBehaviour
             plant.SetRandomSprite(levelVisualIndex);
         }
 
+        if (portal != null)
+            portal.SetPortalVisual(levelVisualIndex);
+
         //Set lighting
         if (lightingManager != null)
             lightingManager.SetGlobalLighting(levelVisualIndex);
+
+
     }
 }
