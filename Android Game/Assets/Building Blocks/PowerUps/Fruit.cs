@@ -32,7 +32,7 @@ public class Fruit : MonoBehaviour, IPooledAsset
 
     [Header("Idle Movement")]
     [SerializeField] LeanTweenType movementType, scalingType;
-    [SerializeField] float cycleTime, maxScale, yMovement, yDelay;
+    [SerializeField] float cycleTime, maxScale;
 
     private void Awake()
     {
@@ -55,8 +55,7 @@ public class Fruit : MonoBehaviour, IPooledAsset
 
     void Wobble()
     {
-        LeanTween.scale(gameObject, transform.localScale + (Vector3.one * maxScale), cycleTime).setEase(scalingType).setLoopPingPong(); //.setIgnoreTimeScale(false)
-        LeanTween.moveLocalY(gameObject, transform.localPosition.y + yMovement, cycleTime).setEase(movementType).setDelay(yDelay).setLoopPingPong();
+        LeanTween.scale(gameObject, transform.localScale + (Vector3.one * maxScale), cycleTime).setEase(scalingType).setLoopPingPong();
     }
 
 

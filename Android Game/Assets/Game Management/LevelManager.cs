@@ -79,6 +79,9 @@ public class LevelManager : MonoBehaviour
         if (portal != null)
             portal.SetLevelManager(this);
 
+        if (fruit != null)
+            fruit.DisableAsset();
+
     }
     /// <summary>
     /// Spawns a part of the level.

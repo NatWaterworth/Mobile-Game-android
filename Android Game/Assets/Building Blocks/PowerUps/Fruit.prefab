@@ -9720,11 +9720,11 @@ MonoBehaviour:
   activeFruit: 1
   acquireEffect: {fileID: 7918346398249106243}
   ppManager: {fileID: 0}
-  activeTimeAfterAcquisition: 0.7
+  activeTimeAfterAcquisition: 0.4
   movementType: 29
   scalingType: 29
   cycleTime: 0.7
-  maxScale: 0.05
+  maxScale: 0.15
   yMovement: -1
   yDelay: 0
 --- !u!1 &6795098284996893173
