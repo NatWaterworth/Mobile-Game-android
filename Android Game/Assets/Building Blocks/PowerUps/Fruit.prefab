@@ -9718,6 +9718,7 @@ MonoBehaviour:
     scoreChange: 1000
     effectColour: {r: 0.93725497, g: 0.18039216, b: 0.14117648, a: 1}
   activeFruit: 1
+  firstNonFruitIndex: 8
   acquireEffect: {fileID: 7918346398249106243}
   ppManager: {fileID: 0}
   activeTimeAfterAcquisition: 0.4

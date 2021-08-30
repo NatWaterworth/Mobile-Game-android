@@ -248,6 +248,9 @@ public class LevelManager : MonoBehaviour
             player.ResetPlayer();
         }
 
+        if (ppManager != null && _resetEntirely)
+            ppManager.CancelEffect();
+
         activatedTimes = 1;
 
         DisableLevelAssets();

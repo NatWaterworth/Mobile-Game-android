@@ -13,7 +13,7 @@ public class PostProcessManager : MonoBehaviour
     MotionBlur motionBlur; //Always active. Adjust or disable in settings
     DepthOfField depthOfField; //Coroutine on aquiring an item.
     LensDistortion lensDistortion; //Coroutine on entering portal
-    ColorAdjustments colorGrading; //Corotuine on aquiring an item.
+    ColorAdjustments colourAdjustment; //Corotuine on aquiring an item.
 
     //Coroutines to adjust Post Processing Overrides at runtime
     Coroutine currentEffect, portalEffect, vignetteEffect;
@@ -41,15 +41,23 @@ public class PostProcessManager : MonoBehaviour
         ppVolume.profile.TryGet(out motionBlur);
         ppVolume.profile.TryGet(out depthOfField);
         ppVolume.profile.TryGet(out lensDistortion);
-        ppVolume.profile.TryGet(out colorGrading);
+        ppVolume.profile.TryGet(out colourAdjustment);
 
         if (vignette!=null)
             vignetteIntensity = vignette.intensity.value;
     }
 
-    public void StartColourEffect(float _duration)
+    public void StartRainbowEffect(float _duration, float _cooldown, float _rate, float _lensSpeed)
     {
+        if (colourAdjustment != null)
+        {
+            if (currentEffect != null)
+                StopCoroutine(portalEffect);
 
+            colourAdjustment.colorFilter.value = Color.white;
+
+            currentEffect = StartCoroutine(HueChangeEffect(_duration, _cooldown, _rate, _lensSpeed));
+        }
     }
 
     public void StartBlurredEffect(float _duration)
@@ -59,7 +67,7 @@ public class PostProcessManager : MonoBehaviour
 
     public void StartPortalEffect(float _duration, Color _colour)
     {
-        if (chromaticAberration != null && lensDistortion!=null && motionBlur!=null && colorGrading != null)
+        if (chromaticAberration != null && lensDistortion!=null && motionBlur!=null && colourAdjustment != null)
         {
             if (portalEffect != null)
                 StopCoroutine(portalEffect);
@@ -70,7 +78,7 @@ public class PostProcessManager : MonoBehaviour
 
     public void StartColourHumEffect(float _duration, Color _colour)
     {
-        if (lensDistortion != null && colorGrading!=null)
+        if (lensDistortion != null && colourAdjustment!=null)
         {
             if (portalEffect != null)
                 StopCoroutine(portalEffect);
@@ -90,12 +98,12 @@ public class PostProcessManager : MonoBehaviour
             _intensity =  1 - Mathf.Pow((Time.time - _timestamp)/ _duration,2);
             chromaticAberration.intensity.value = _intensity;
             lensDistortion.intensity.value = -_intensity;
-            colorGrading.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
+            colourAdjustment.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
             yield return new WaitForEndOfFrame();
         }
         chromaticAberration.intensity.value = 0;
         lensDistortion.intensity.value = 0;
-        colorGrading.colorFilter.value = Color.white;
+        colourAdjustment.colorFilter.value = Color.white;
         motionBlur.active = false;
     }
 
@@ -108,11 +116,58 @@ public class PostProcessManager : MonoBehaviour
         {
             _intensity = 1 - Mathf.Pow((Time.time - _timestamp) / _duration, 2);
             lensDistortion.intensity.value = -_intensity*.5f;
-            colorGrading.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
+            colourAdjustment.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
             yield return new WaitForEndOfFrame();
         }
-        colorGrading.colorFilter.value = Color.white;
+        colourAdjustment.colorFilter.value = Color.white;
         lensDistortion.intensity.value = 0;
+    }
+
+    IEnumerator HueChangeEffect(float _duration,float _cooldown, float _colourRate, float _lensSpeed)
+    {
+        float _timestamp = Time.time;
+        float _intensity = 0;
+
+        while (_timestamp + _duration > Time.time)
+        {
+            _intensity += _colourRate;
+            colourAdjustment.hueShift.value = Mathf.Lerp(-180, 180, _intensity%1);
+            lensDistortion.intensity.value = 0.5f * Mathf.Sin(_intensity* _lensSpeed);
+            yield return new WaitForEndOfFrame();
+        }
+
+        float _hueValue = colourAdjustment.hueShift.value;
+        float _lensValue = lensDistortion.intensity.value;
+        _timestamp = Time.time;
+
+        while (_timestamp + _cooldown > Time.time)
+        {
+            _intensity =  1 - Mathf.Pow((Time.time - _timestamp)/ _cooldown, 2);
+            colourAdjustment.hueShift.value = Mathf.Lerp(0, _hueValue, _intensity);
+            lensDistortion.intensity.value = Mathf.Lerp(0, _lensValue, _intensity);
+            yield return new WaitForEndOfFrame();
+        }
+        colourAdjustment.hueShift.value = 0;
+    }
+
+    public void CancelEffect()
+    {
+        if (portalEffect != null)
+            StopCoroutine(portalEffect);
+        if (vignetteEffect != null)
+            StopCoroutine(vignetteEffect);
+        if (currentEffect != null)
+            StopCoroutine(currentEffect);
+
+        if (colourAdjustment != null)
+        {
+            colourAdjustment.colorFilter.value = Color.white;
+            colourAdjustment.hueShift.value = 0;
+        }
+        if (lensDistortion != null)
+            lensDistortion.intensity.value = 0;
+        if (chromaticAberration !=null)
+            chromaticAberration.intensity.value = 0;
     }
 
 

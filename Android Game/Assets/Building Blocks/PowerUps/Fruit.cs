@@ -19,7 +19,7 @@ public class Fruit : MonoBehaviour, IPooledAsset
     [Header("Fruit Info")]
     SpriteRenderer spriteRenderer;
     [SerializeField] List<FruitPowerUp> fruitTypes;
-    [SerializeField] int activeFruit;
+    [SerializeField] int activeFruit, firstNonFruitIndex;
     Collider2D collider;
 
 
@@ -96,7 +96,10 @@ public class Fruit : MonoBehaviour, IPooledAsset
         if (ppManager == null)
             return;
 
-        ppManager.StartColourHumEffect(activeTimeAfterAcquisition, fruitTypes[activeFruit % fruitTypes.Count].effectColour); 
+        ppManager.StartColourHumEffect(activeTimeAfterAcquisition, fruitTypes[activeFruit % fruitTypes.Count].effectColour);
+
+        if(activeFruit >= firstNonFruitIndex)
+            ppManager.StartRainbowEffect(5f, .5f, Mathf.Pow(5,activeFruit-firstNonFruitIndex)*.001f, Mathf.Pow(4, activeFruit- firstNonFruitIndex)*5);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
