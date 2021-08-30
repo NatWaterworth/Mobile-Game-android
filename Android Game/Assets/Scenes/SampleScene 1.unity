@@ -1969,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2727385647349634372, guid: 561332a738b96f64484d1c2fd71a048c, type: 3}
       propertyPath: m_SortingOrder
-      value: -7
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2727385647349634372, guid: 561332a738b96f64484d1c2fd71a048c, type: 3}
       propertyPath: m_MaxParticleSize
@@ -2599,9 +2599,9 @@ MonoBehaviour:
   - color: {r: 1, g: 1, b: 1, a: 1}
     intensity: 1
   - color: {r: 1, g: 0.9875087, b: 0.9386792, a: 1}
-    intensity: 1.1
+    intensity: 0.9
   - color: {r: 1, g: 0.9372549, b: 0.7490196, a: 1}
-    intensity: 0.95
+    intensity: 0.85
   - color: {r: 0.49803922, g: 0.627451, b: 0.9529412, a: 1}
     intensity: 0.75
   - color: {r: 0.7882353, g: 0.53333336, b: 1, a: 1}
@@ -12979,7 +12979,7 @@ MonoBehaviour:
   fruitSpawnChance: 1
   generateLevel: 1
   levelPartSize: 15.1
-  levelHeight: 10
+  levelHeight: 50
   levelScale: 0.4
   levelVisualIndex: 3
   levelTransitionTime: 1.4
