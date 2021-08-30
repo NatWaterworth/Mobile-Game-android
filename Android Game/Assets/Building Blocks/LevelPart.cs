@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelPart : MonoBehaviour, IPooledAsset
 {
+    [SerializeField] List<Transform> spawnPoints;
 
     public void DisableAsset()
     {
@@ -21,6 +22,13 @@ public class LevelPart : MonoBehaviour, IPooledAsset
     public bool InUse()
     {
         return gameObject.activeSelf;
+    }
+
+    public Vector3 GetSpawnPoint()
+    {
+        if(spawnPoints !=null && spawnPoints.Count > 0)
+            return spawnPoints[Random.Range(0, spawnPoints.Count)].position;
+        return transform.position;
     }
 
 }

@@ -23,9 +23,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] List<LevelPart> boundaryLevelParts;
     [SerializeField] List<LevelPart> enemyLevelParts;
     [SerializeField] LevelPart ground, roof;
+    [SerializeField] Fruit fruit;
 
     [Header("Level Options")]
     [SerializeField] [Range(0.0f, 1f)] float enemySpawnChance;
+    [SerializeField] [Range(0.0f, 1f)] float fruitSpawnChance;
     [SerializeField] bool generateLevel; 
     [SerializeField] float levelPartSize;
     [SerializeField] float levelHeight;
@@ -91,6 +93,8 @@ public class LevelManager : MonoBehaviour
         Quaternion _rotation = Quaternion.identity;
         Vector3 _scale = Vector3.one * levelScale;
 
+        LevelPart _part;
+
         float chance = Random.Range(0.0f, 1.0f);
         int choice = 0;
         if (canHaveEnemy)
@@ -100,7 +104,8 @@ public class LevelManager : MonoBehaviour
 
                 while (enemyLevelParts[Mathf.FloorToInt((chance * enemyLevelParts.Count) + choice) % enemyLevelParts.Count].InUse() || choice > 10)
                     choice++;
-                enemyLevelParts[Mathf.FloorToInt((chance * enemyLevelParts.Count) + choice) % enemyLevelParts.Count].SetupAsset(_position, _rotation, _scale);
+                _part = enemyLevelParts[Mathf.FloorToInt((chance * enemyLevelParts.Count) + choice) % enemyLevelParts.Count];
+                _part.SetupAsset(_position, _rotation, _scale);
 
                 if (choice > 10)
                     Debug.LogError("Choice too high, probably an error occuring.");
@@ -109,17 +114,28 @@ public class LevelManager : MonoBehaviour
             {
                 while (boundaryLevelParts[Mathf.FloorToInt(((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count].InUse() || choice > 10)
                     choice++;
-                boundaryLevelParts[Mathf.FloorToInt(((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count].SetupAsset(_position, _rotation, _scale);
+                _part = boundaryLevelParts[Mathf.FloorToInt(((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count];
+                _part.SetupAsset(_position, _rotation, _scale);
             }
         }
         else
         {
             while (boundaryLevelParts[Mathf.FloorToInt((chance * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count].InUse() || choice > 10)
                 choice++;
-            boundaryLevelParts[Mathf.FloorToInt((chance * boundaryLevelParts.Count)+choice)%boundaryLevelParts.Count].SetupAsset(_position, _rotation, _scale);
+            _part = boundaryLevelParts[Mathf.FloorToInt((chance * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count];
+            _part.SetupAsset(_position, _rotation, _scale);
         }
 
-        activatedTimes++;
+        chance = Random.Range(0.0f, 1.0f);
+
+        if (chance < fruitSpawnChance) //try to get part if it's active, get the next one.
+        {
+            //set fruit spawn in part.
+            if(!fruit.InUse())
+                fruit.SetupAsset(_part.GetSpawnPoint(), Quaternion.identity, fruit.transform.localScale);
+        }
+
+            activatedTimes++;
     }
 
     void SpawnLevelAssets()
@@ -158,6 +174,10 @@ public class LevelManager : MonoBehaviour
         _instance = Instantiate(roof, transform);
         roof = _instance;
         roof.DisableAsset();
+
+        Fruit _fruit = Instantiate(fruit, transform);
+        fruit = _fruit;
+        fruit.DisableAsset();
 
     }
 

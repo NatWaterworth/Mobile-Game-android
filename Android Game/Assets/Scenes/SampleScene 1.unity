@@ -4851,9 +4851,9 @@ MonoBehaviour:
   horizontalLerpRatio: 2.63
   verticalCameraOffset: 3.5
   maxAngleShake: 0
-  maxXOffsetShake: 17
-  maxYOffsetShake: 17
-  traumaDampening: 1.2
+  maxXOffsetShake: 13
+  maxYOffsetShake: 13
+  traumaDampening: 1.1
   traumaExponent: 1.5
   minZoom: 6.8
   maxZoom: 6
@@ -12272,7 +12272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761102994}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -4.51, z: 0}
+  m_LocalPosition: {x: 0, y: -4.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 913803498}
@@ -20583,25 +20583,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 176193246072892047, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.08627451
-      objectReference: {fileID: 0}
     - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3743875
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3743875
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3743875
       objectReference: {fileID: 0}
     - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20644,48 +20628,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6378278034131965609, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: maxScale
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6378278034131965609, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
       propertyPath: ppManager
       value: 
       objectReference: {fileID: 1891216921}
-    - target: {fileID: 6378278034131965609, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: activeTimeAfterAcquisition
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6378278034131965610, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
       propertyPath: m_Name
       value: Fruit
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.6392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.minColor.a
-      value: 0.2627451
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.minColor.b
-      value: 0.4528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.minColor.g
-      value: 0.4528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.minColor.r
-      value: 0.4528302
-      objectReference: {fileID: 0}
-    - target: {fileID: 6621962934468076218, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7918346398249106243, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.43137255
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}

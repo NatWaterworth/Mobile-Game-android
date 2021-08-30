@@ -129,4 +129,9 @@ public class Fruit : MonoBehaviour, IPooledAsset
     {
         gameObject.SetActive(false);
     }
+
+    public bool InUse()
+    {
+        return gameObject.activeSelf;
+    }
 }

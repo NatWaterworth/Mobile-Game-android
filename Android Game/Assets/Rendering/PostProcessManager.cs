@@ -70,7 +70,7 @@ public class PostProcessManager : MonoBehaviour
 
     public void StartColourHumEffect(float _duration, Color _colour)
     {
-        if (chromaticAberration != null && colorGrading!=null)
+        if (lensDistortion != null && colorGrading!=null)
         {
             if (portalEffect != null)
                 StopCoroutine(portalEffect);
@@ -107,12 +107,12 @@ public class PostProcessManager : MonoBehaviour
         while (_timestamp + _duration > Time.time)
         {
             _intensity = 1 - Mathf.Pow((Time.time - _timestamp) / _duration, 2);
-            //chromaticAberration.intensity.value = _intensity;
+            lensDistortion.intensity.value = -_intensity*.5f;
             colorGrading.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
             yield return new WaitForEndOfFrame();
         }
-        //chromaticAberration.intensity.value = 0;
         colorGrading.colorFilter.value = Color.white;
+        lensDistortion.intensity.value = 0;
     }
 
 

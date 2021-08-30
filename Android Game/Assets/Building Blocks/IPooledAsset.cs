@@ -7,4 +7,6 @@ public interface IPooledAsset
     void SetupAsset(Vector3 _position, Quaternion _rotation, Vector3 _localScale);
 
     void DisableAsset();
+
+    bool InUse();
 }
