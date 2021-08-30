@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void IncreaseScore(int scoreChange)
+    {
+        score += scoreChange;
+    }
+
     #region Time Related Functions
 
     void PauseGame(bool _paused)

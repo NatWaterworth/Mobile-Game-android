@@ -59,12 +59,23 @@ public class PostProcessManager : MonoBehaviour
 
     public void StartPortalEffect(float _duration, Color _colour)
     {
-        if (chromaticAberration != null && lensDistortion!=null && motionBlur!=null)
+        if (chromaticAberration != null && lensDistortion!=null && motionBlur!=null && colorGrading != null)
         {
             if (portalEffect != null)
                 StopCoroutine(portalEffect);
 
             portalEffect = StartCoroutine(PortalEffect(_duration, _colour));
+        }
+    }
+
+    public void StartColourHumEffect(float _duration, Color _colour)
+    {
+        if (chromaticAberration != null && colorGrading!=null)
+        {
+            if (portalEffect != null)
+                StopCoroutine(portalEffect);
+
+            portalEffect = StartCoroutine(ColourHumEffect(_duration, _colour));
         }
     }
 
@@ -86,6 +97,22 @@ public class PostProcessManager : MonoBehaviour
         lensDistortion.intensity.value = 0;
         colorGrading.colorFilter.value = Color.white;
         motionBlur.active = false;
+    }
+
+    IEnumerator ColourHumEffect(float _duration, Color _colour)
+    {
+        float _timestamp = Time.time;
+        float _intensity = 0;
+
+        while (_timestamp + _duration > Time.time)
+        {
+            _intensity = 1 - Mathf.Pow((Time.time - _timestamp) / _duration, 2);
+            //chromaticAberration.intensity.value = _intensity;
+            colorGrading.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
+            yield return new WaitForEndOfFrame();
+        }
+        //chromaticAberration.intensity.value = 0;
+        colorGrading.colorFilter.value = Color.white;
     }
 
 

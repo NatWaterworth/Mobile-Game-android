@@ -13,9 +13,11 @@ public class LevelVisuals : MonoBehaviour
         {
             foreach(GameObject levelObject in levelVisuals)
             {
-                levelObject.SetActive(false);
+                if(levelObject!=null)
+                    levelObject.SetActive(false);
             }
-            levelVisuals[_visualIndex % levelVisuals.Count].SetActive(true);
+            if(levelVisuals[_visualIndex % levelVisuals.Count] !=null)
+                levelVisuals[_visualIndex % levelVisuals.Count].SetActive(true);
         }
     }
 }
