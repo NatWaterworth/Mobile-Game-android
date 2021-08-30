@@ -177,6 +177,7 @@ public class LevelManager : MonoBehaviour
 
         Fruit _fruit = Instantiate(fruit, transform);
         fruit = _fruit;
+        fruit.SetPostProcessManager(ppManager);
         fruit.DisableAsset();
 
     }

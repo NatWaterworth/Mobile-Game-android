@@ -9594,7 +9594,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.8
   m_Color: {r: 1, g: 0.11814082, b: 0, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.15
   m_LightVolumeOpacity: 0.777
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -9720,12 +9720,12 @@ MonoBehaviour:
   activeFruit: 1
   acquireEffect: {fileID: 7918346398249106243}
   ppManager: {fileID: 0}
-  activeTimeAfterAcquisition: 0.5
+  activeTimeAfterAcquisition: 0.7
   movementType: 29
   scalingType: 29
   cycleTime: 0.7
-  maxScale: 0.1
-  yMovement: 0
+  maxScale: 0.05
+  yMovement: -1
   yDelay: 0
 --- !u!1 &6795098284996893173
 GameObject:

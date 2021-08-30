@@ -27,7 +27,15 @@ public class LevelPartDeactivator : MonoBehaviour
             _part.DisableAsset();
             Debug.Log("Spawn Part!");
             levelManager.SpawnLevelPart(true);
-        }      
+        }
+
+        Fruit _fruit = collision.GetComponent<Fruit>();
+
+        if (_fruit != null)
+        {
+            _fruit.DisableAsset();
+            Debug.Log("Disable Fruit!");
+        }
     }
 
     public void SetLevelManager(LevelManager _manager)

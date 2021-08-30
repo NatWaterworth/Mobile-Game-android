@@ -12974,7 +12974,9 @@ MonoBehaviour:
   - {fileID: -3660065406200432248, guid: 89e7fae5980dd564d8526621cf8416fc, type: 3}
   ground: {fileID: 94029589143583703, guid: 928f8b03d1fbbfc4992950143a62c662, type: 3}
   roof: {fileID: -8413758812211043037, guid: 355719d842134c34bb35e2752c89d8e7, type: 3}
+  fruit: {fileID: 6378278034131965609, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
   enemySpawnChance: 0.385
+  fruitSpawnChance: 1
   generateLevel: 1
   levelPartSize: 15.1
   levelHeight: 10
@@ -20576,67 +20578,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76a1321a87679a449be40bf49eb74fc3, type: 3}
---- !u!1001 &7935569431811623587
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996697607270136286, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6378278034131965609, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: ppManager
-      value: 
-      objectReference: {fileID: 1891216921}
-    - target: {fileID: 6378278034131965610, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
-      propertyPath: m_Name
-      value: Fruit
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a37d231e86821694db9f2af4ebc1ef58, type: 3}
 --- !u!1001 &8343810983737134678
 PrefabInstance:
   m_ObjectHideFlags: 0
