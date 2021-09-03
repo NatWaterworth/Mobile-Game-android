@@ -377,6 +377,10 @@ PrefabInstance:
       value: EnemyBladePingPong
       objectReference: {fileID: 0}
     - target: {fileID: 2543258398867799653, guid: ccf4ceb5d1eea9e419e3fce90a757fe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2543258398867799653, guid: ccf4ceb5d1eea9e419e3fce90a757fe6, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.75
       objectReference: {fileID: 0}
@@ -443,6 +447,10 @@ PrefabInstance:
     - target: {fileID: 7102988995960374507, guid: ccf4ceb5d1eea9e419e3fce90a757fe6, type: 3}
       propertyPath: m_ShapeLightFalloffSize
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416824380301037923, guid: ccf4ceb5d1eea9e419e3fce90a757fe6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccf4ceb5d1eea9e419e3fce90a757fe6, type: 3}

@@ -7,11 +7,12 @@ public class PlayerController : MonoBehaviour
     [Header("Controls")]
     Touch startingPoint, endPoint;
     [SerializeField] bool drag;
-    bool canMove, dead;
+    [SerializeField] bool canMove, dead;
 
     Rigidbody2D rb;
     [SerializeField] float forceMultiplier;
     [SerializeField] float maxDragDistance;
+    [SerializeField] float minDragDistance;
 
     [Header("Camera Shake")]
     [SerializeField] float cameraMaxImpactOnDrag, cameraMaxImpactOnCollision, cameraMaxZoomOnRelease, cameraZoomOnDrag;
@@ -48,8 +49,10 @@ public class PlayerController : MonoBehaviour
         {
              GetComponent<SpriteRenderer>().sprite = playerBodySprite;
         }
+
         dead = false;
-        rb.isKinematic = false;
+        rb.velocity = Vector2.zero;
+        rb.gravityScale = 1;
         canMove = true;
         transform.parent = null;
         drag = false;
@@ -78,19 +81,23 @@ public class PlayerController : MonoBehaviour
         else if (drag)
         {
             Release();
-            drag = false;
         }
 
     }
 
     void Release()
     {
+        drag = false;
+
+        if (Vector2.Distance(startingPoint.position, endPoint.position) < minDragDistance)
+            return;
+
         UnStick();
 
         Vector3 _startPoint = Camera.main.ScreenToWorldPoint(startingPoint.position);
         Vector3 _endPoint = Camera.main.ScreenToWorldPoint(endPoint.position);
-
         Vector3 _force = Vector3.ClampMagnitude(_endPoint - _startPoint, maxDragDistance) * forceMultiplier;
+
         if (rb != null)
             rb.velocity = _force;
 

@@ -11,11 +11,6 @@ public class UIObject : MonoBehaviour
     [SerializeField] float delay;
     [SerializeField] float moveX;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {

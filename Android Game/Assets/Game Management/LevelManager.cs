@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
     [Header("Level Options")]
     [SerializeField] [Range(0.0f, 1f)] float enemySpawnChance;
     [SerializeField] [Range(0.0f, 1f)] float fruitSpawnChance;
+    [SerializeField] float levelPartRangeIncrement = 0.2f, fruitPartRangeIncrement = 0.3f;
+    [SerializeField] [Tooltip("The range of available parts to spawn for current difficulty/progress.")] int enemylevelPartRange, boundaryLevelRange, fruitRange;
     [SerializeField] bool generateLevel; 
     [SerializeField] float levelPartSize;
     [SerializeField] float levelHeight;
@@ -41,7 +43,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] LevelVisuals visuals;
     Portal portal;
 
-    int activatedTimes = 1;
+    int activatedTimes = 1, totalRunActivatedTimes;
     const int levelPartsActiveAnytime = 4; //The number of active parts at any point  
 
     // Start is called before the first frame update
@@ -105,28 +107,35 @@ public class LevelManager : MonoBehaviour
             if (chance < enemySpawnChance) //try to get part if it's active, get the next one.
             {
 
-                while (enemyLevelParts[Mathf.FloorToInt((chance * enemyLevelParts.Count) + choice) % enemyLevelParts.Count].InUse() || choice > 10)
+                while (enemyLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1)].InUse() || choice > 10)
                     choice++;
-                _part = enemyLevelParts[Mathf.FloorToInt((chance * enemyLevelParts.Count) + choice) % enemyLevelParts.Count];
+                _part = enemyLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement* (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1)];
                 _part.SetupAsset(_position, _rotation, _scale);
+
+                //Debug.Log("Spawning enemy part: " + Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1));
+
 
                 if (choice > 10)
                     Debug.LogError("Choice too high, probably an error occuring.");
             }
             else
             {
-                while (boundaryLevelParts[Mathf.FloorToInt(((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count].InUse() || choice > 10)
+                while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice > 10)
                     choice++;
-                _part = boundaryLevelParts[Mathf.FloorToInt(((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count];
+                _part = boundaryLevelParts[Mathf.Min( Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))),boundaryLevelParts.Count-1)];
                 _part.SetupAsset(_position, _rotation, _scale);
+
+                //Debug.Log("Spawning boundary part: " + Mathf.Min(Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1));
             }
         }
         else
         {
-            while (boundaryLevelParts[Mathf.FloorToInt((chance * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count].InUse() || choice > 10)
+            while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice > 10)
                 choice++;
-            _part = boundaryLevelParts[Mathf.FloorToInt((chance * boundaryLevelParts.Count) + choice) % boundaryLevelParts.Count];
+            _part = boundaryLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)];
             _part.SetupAsset(_position, _rotation, _scale);
+
+            //Debug.Log("Spawning boundary part: " + Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1));
         }
 
         chance = Random.Range(0.0f, 1.0f);
@@ -135,7 +144,8 @@ public class LevelManager : MonoBehaviour
         {
             //set fruit spawn in part.
             if(!fruit.InUse())
-                fruit.SetupAsset(_part.GetSpawnPoint(), Quaternion.identity, fruit.transform.localScale);
+                fruit.SetupAsset(_part.GetSpawnPoint(), Quaternion.identity, fruit.transform.localScale, Mathf.RoundToInt(fruitPartRangeIncrement * (activatedTimes+totalRunActivatedTimes)), fruitRange);
+            //Debug.Log("fruit: " + Mathf.RoundToInt(fruitPartRangeIncrement * (activatedTimes + totalRunActivatedTimes)));
         }
 
             activatedTimes++;
@@ -233,7 +243,7 @@ public class LevelManager : MonoBehaviour
     /// <returns></returns>
     public float GetLevelProgress()
     {
-        float progress = Mathf.Clamp01( Mathf.InverseLerp(startpoint.position.y, startpoint.position.y + levelHeight, player.transform.position.y) - levelProgress);
+        float progress = Mathf.Clamp01( Mathf.InverseLerp(startpoint.position.y + .3f, startpoint.position.y + levelHeight, player.transform.position.y) - levelProgress);
         levelProgress += progress;
         return Mathf.Max(0, progress);
     }
@@ -242,15 +252,12 @@ public class LevelManager : MonoBehaviour
     {
         if(risingWater!=null)
             risingWater.RestartRisingDeathBox();
-        if (player != null)
-        {
-            player.transform.position = startpoint.transform.position;
-            player.ResetPlayer();
-        }
+        
 
         if (ppManager != null && _resetEntirely)
             ppManager.CancelEffect();
 
+        totalRunActivatedTimes = activatedTimes;
         activatedTimes = 1;
 
         DisableLevelAssets();
@@ -259,8 +266,17 @@ public class LevelManager : MonoBehaviour
         levelProgress = 0;
 
         if (_resetEntirely)
+        {
             levelVisualIndex = 0;
+            totalRunActivatedTimes = 0;
+        }
         SetLevelVisuals();
+
+        if (player != null)
+        {
+            player.transform.position = startpoint.transform.position + Vector3.up;
+            player.ResetPlayer();
+        }
     }
 
     public void LevelTransition()

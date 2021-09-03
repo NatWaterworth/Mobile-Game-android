@@ -18,14 +18,12 @@ public class LevelPartDeactivator : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Triggered: "+collision.name);    
+    {  
         LevelPart _part = collision.GetComponent<LevelPart>();
 
         if (_part != null)
         {
             _part.DisableAsset();
-            Debug.Log("Spawn Part!");
             levelManager.SpawnLevelPart(true);
         }
 
@@ -34,7 +32,6 @@ public class LevelPartDeactivator : MonoBehaviour
         if (_fruit != null)
         {
             _fruit.DisableAsset();
-            Debug.Log("Disable Fruit!");
         }
     }
 

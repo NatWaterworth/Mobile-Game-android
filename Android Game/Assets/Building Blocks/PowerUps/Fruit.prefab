@@ -9687,27 +9687,27 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: 8d42e829bafdb2046841d416ea16df77, type: 3}
     scoreChange: 100
     effectColour: {r: 0.86666673, g: 0.14509805, b: 0.16078432, a: 1}
-  - sprite: {fileID: 21300000, guid: 6288f3315f682e042a01282e0bc54858, type: 3}
+  - sprite: {fileID: 21300000, guid: 8c577d5393997654c985e4ca7c311639, type: 3}
     scoreChange: 150
-    effectColour: {r: 1, g: 0.7176471, b: 0.07058824, a: 1}
+    effectColour: {r: 0.39607844, g: 0.21960784, b: 0.5882353, a: 1}
   - sprite: {fileID: 21300000, guid: 1a88778b59fe4b643887803f1a83fc18, type: 3}
     scoreChange: 200
     effectColour: {r: 0.6666667, g: 0.11764707, b: 0.14117648, a: 1}
-  - sprite: {fileID: 21300000, guid: 8c577d5393997654c985e4ca7c311639, type: 3}
+  - sprite: {fileID: 21300000, guid: e356cfc955fe496409e4c218963bdc3b, type: 3}
     scoreChange: 250
-    effectColour: {r: 0.39607847, g: 0.21960786, b: 0.5882353, a: 1}
-  - sprite: {fileID: 21300000, guid: e6935c176d06d3c48a0d0155899a3600, type: 3}
+    effectColour: {r: 0.54509807, g: 0.6784314, b: 0.2784314, a: 1}
+  - sprite: {fileID: 21300000, guid: 1873bde2e46e2b1429147363470859de, type: 3}
     scoreChange: 300
-    effectColour: {r: 0.9843138, g: 0.7960785, b: 0.078431375, a: 1}
+    effectColour: {r: 0.35686275, g: 0.5529412, b: 0.227451, a: 1}
   - sprite: {fileID: 21300000, guid: d576ed3c848150e4c9d98f52fcc51852, type: 3}
     scoreChange: 350
     effectColour: {r: 0.8745099, g: 0.43137258, b: 0.10980393, a: 1}
-  - sprite: {fileID: 21300000, guid: e356cfc955fe496409e4c218963bdc3b, type: 3}
+  - sprite: {fileID: 21300000, guid: 6288f3315f682e042a01282e0bc54858, type: 3}
     scoreChange: 400
-    effectColour: {r: 0.54509807, g: 0.6784314, b: 0.2784314, a: 1}
-  - sprite: {fileID: 21300000, guid: 1873bde2e46e2b1429147363470859de, type: 3}
+    effectColour: {r: 1, g: 0.7176471, b: 0.07058824, a: 1}
+  - sprite: {fileID: 21300000, guid: e6935c176d06d3c48a0d0155899a3600, type: 3}
     scoreChange: 450
-    effectColour: {r: 0.31764707, g: 0.5137255, b: 0.23529413, a: 1}
+    effectColour: {r: 0.9686275, g: 0.86666673, b: 0.03137255, a: 1}
   - sprite: {fileID: 21300000, guid: 54993dccf33a66448b7ffbc146454e29, type: 3}
     scoreChange: 500
     effectColour: {r: 0.18823531, g: 0.70980394, b: 0.8588236, a: 1}

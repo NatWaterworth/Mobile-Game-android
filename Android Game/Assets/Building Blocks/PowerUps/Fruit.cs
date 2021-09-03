@@ -44,7 +44,7 @@ public class Fruit : MonoBehaviour, IPooledAsset
 
 
         light2D = GetComponent<Light2D>();
-        SetupAsset(transform.position, Quaternion.identity, transform.localScale);
+        SetupAsset(transform.position, Quaternion.identity, transform.localScale,0,1);
         Wobble();
     }
 
@@ -108,13 +108,15 @@ public class Fruit : MonoBehaviour, IPooledAsset
             TriggerEffect();
     }
 
-    public void SetupAsset(Vector3 _position, Quaternion _rotation, Vector3 _localScale)
+    public void SetupAsset(Vector3 _position, Quaternion _rotation, Vector3 _localScale, int _fruitIndex, int _fruitRange)
     {
         gameObject.SetActive(true);
 
         if (fruitTypes != null && fruitTypes.Count > 0)
         {
-            activeFruit = Random.Range(0, fruitTypes.Count);
+            activeFruit = Random.Range(_fruitIndex, _fruitIndex + _fruitRange);
+
+            activeFruit = Mathf.Min(fruitTypes.Count - 1, activeFruit);
 
             spriteRenderer.sprite = fruitTypes[activeFruit].sprite;
 
@@ -135,5 +137,10 @@ public class Fruit : MonoBehaviour, IPooledAsset
     public bool InUse()
     {
         return gameObject.activeSelf;
+    }
+
+    public void SetupAsset(Vector3 _position, Quaternion _rotation, Vector3 _localScale)
+    {
+        throw new System.NotImplementedException();
     }
 }

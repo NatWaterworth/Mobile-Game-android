@@ -115,7 +115,7 @@ public class PostProcessManager : MonoBehaviour
         while (_timestamp + _duration > Time.time)
         {
             _intensity = 1 - Mathf.Pow((Time.time - _timestamp) / _duration, 2);
-            lensDistortion.intensity.value = -_intensity*.5f;
+            lensDistortion.intensity.value = -_intensity*.6f;
             colourAdjustment.colorFilter.value = Color.Lerp(Color.white, _colour, _intensity);
             yield return new WaitForEndOfFrame();
         }
