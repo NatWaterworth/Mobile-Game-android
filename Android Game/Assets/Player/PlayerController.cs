@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject splatter;
     [SerializeField] PostProcessManager ppManager;
     Sprite playerBodySprite;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -130,9 +133,27 @@ public class PlayerController : MonoBehaviour
 
     void SpawnHitSplatter(Vector3 _hitPoint, Transform _parent)
     {
-        GameObject _splatter = Instantiate(splatter, _hitPoint, Quaternion.Euler(0,0,Random.Range(0,360.0f)), null);
-        _splatter.transform.parent = _parent;
-        Destroy(_splatter, 4);
+        if (PooledObjectManager.Instance != null)
+        {
+            GameObject splatter = PooledObjectManager.Instance.SpawnFromPool("Splatter", _hitPoint, Quaternion.Euler(0, 0, Random.Range(0, 360.0f)));
+            splatter.transform.parent = _parent;
+
+            SpriteRenderer renderer = splatter.GetComponent<SpriteRenderer>();
+            if (renderer != null)
+                StartCoroutine(FadeSplatter(renderer, 3f));
+        }
+    }
+
+    IEnumerator FadeSplatter(SpriteRenderer splatterRenderer, float despawnDelay)
+    {
+        float time = Time.time;
+
+        while(Time.time - time < despawnDelay)
+        {
+            splatterRenderer.color = new Color(splatterRenderer.color.r, splatterRenderer.color.g, splatterRenderer.color.b, Mathf.Sqrt( Mathf.InverseLerp(1, 0, (Time.time - time) / despawnDelay)));
+            yield return new WaitForEndOfFrame();
+        }
+        splatterRenderer.gameObject.SetActive(false);
     }
 
     void UnStick()
