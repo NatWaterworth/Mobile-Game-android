@@ -13892,6 +13892,116 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1846832733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1846832734}
+  - component: {fileID: 1846832735}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1846832734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846832733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1848288387}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846832735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846832733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a05dd564c64ef49bb1206880fb46a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Level1
+    clip: {fileID: 8300000, guid: ee793f0beea62af44955490d9dd4538f, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: Level2
+    clip: {fileID: 8300000, guid: e2ef5f7ffce31114caca5e6bd11d0819, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: Level3
+    clip: {fileID: 8300000, guid: fd079f37395a5104498cefe877b3e29e, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: Level4
+    clip: {fileID: 8300000, guid: 79abe8a844471ae41bc09ac1425761f5, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: Level5
+    clip: {fileID: 8300000, guid: 98a0ec63e58d9df4ab3c047817c87657, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: Menu
+    clip: {fileID: 8300000, guid: 2b613c7eba100224f90f3c6f87ea98b8, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
+  - name: WaterRush
+    clip: {fileID: 8300000, guid: 57619450f491a9b41bf4e6c5cfb1a488, type: 3}
+    pitch: 1
+    volume: 0.2
+    source: {fileID: 0}
+    loop: 0
+  - name: SlimeDie
+    clip: {fileID: 8300000, guid: 21bca03f9623ac34c8b7611ff54f1fbb, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 0
+  - name: SlimeFling
+    clip: {fileID: 8300000, guid: b77116d9a225d7548bf9cc53a32ae8d5, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 0
+  - name: SlimeHit
+    clip: {fileID: 8300000, guid: b6c01e0d3486bb14e8a7acd89d928684, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 0
+  - name: Water
+    clip: {fileID: 8300000, guid: fca9b40d112cbb644a5fb01da358a308, type: 3}
+    pitch: 1
+    volume: 0.1
+    source: {fileID: 0}
+    loop: 1
 --- !u!1 &1848288385
 GameObject:
   m_ObjectHideFlags: 0
@@ -13945,6 +14055,7 @@ Transform:
   m_Children:
   - {fileID: 1891216920}
   - {fileID: 293050736}
+  - {fileID: 1846832734}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14043,7 +14154,7 @@ MonoBehaviour:
   fruitSpawnChance: 1
   levelPartRangeIncrement: 0.1
   fruitPartRangeIncrement: 0.2
-  enemylevelPartRange: 4
+  enemylevelPartRange: 5
   boundaryLevelRange: 6
   fruitRange: 3
   generateLevel: 1
@@ -14051,6 +14162,7 @@ MonoBehaviour:
   levelHeight: 100
   levelScale: 0.4
   levelVisualIndex: 3
+  levelTypes: 5
   levelTransitionTime: 1.4
   lightingManager: {fileID: 293050738}
   ppManager: {fileID: 1891216921}

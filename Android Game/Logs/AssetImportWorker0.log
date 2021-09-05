@@ -1,0 +1,1609 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Program Files (x86)\UnityEditors\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63758
+Successfully changed project path to: D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
+D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 82.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/NatWa/GitHubRepositories/Mobile-Game-ios/Android Game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Vendor:   
+    VRAM:     11127 MB
+    Driver:   30.0.14.7141
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files (x86)/UnityEditors/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003524 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 71.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.359 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003635 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7ca69d736 (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7ca69d736 (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 77.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in 16.343 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3276 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.4 MB.
+System memory in use after: 147.6 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 3718.
+Total: 2.088000 ms (FindLiveObjects: 0.231800 ms CreateObjectMapping: 0.121600 ms MarkObjects: 1.711100 ms  DeleteObjects: 0.022800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_single_003_50313.mp3
+  artifactKey: Guid(b6c01e0d3486bb14e8a7acd89d928684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_single_003_50313.mp3 using Guid(b6c01e0d3486bb14e8a7acd89d928684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0b3b8df193549decd23eaa1513af3b') in 0.131930 seconds
+  Import took 0.158039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Sounds/SoundEffects/Slime
+  artifactKey: Guid(98414a2b0bdd1154a8aad3ea4fcc8c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Slime using Guid(98414a2b0bdd1154a8aad3ea4fcc8c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41e0e469a1e2444fdff936c4aac3286') in 0.005936 seconds
+  Import took 0.023582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_big_growling_slimy_bubbling_001_62892.mp3
+  artifactKey: Guid(57619450f491a9b41bf4e6c5cfb1a488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_big_growling_slimy_bubbling_001_62892.mp3 using Guid(57619450f491a9b41bf4e6c5cfb1a488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42e64e5950df33b06c5da444967e087') in 0.014035 seconds
+  Import took 0.027337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_or_bubble_pop_002_65988.mp3
+  artifactKey: Guid(151e55d50e88d9c419886eab802bc051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_or_bubble_pop_002_65988.mp3 using Guid(151e55d50e88d9c419886eab802bc051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab2effc1b1bba8d1b81add2b2988714') in 0.012878 seconds
+  Import took 0.024232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_single_002_50312.mp3
+  artifactKey: Guid(b77116d9a225d7548bf9cc53a32ae8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Slime/zapsplat_cartoon_slime_drip_single_002_50312.mp3 using Guid(b77116d9a225d7548bf9cc53a32ae8d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ae31610eecd2ad1cc8ff8c8ec9465d9') in 0.009737 seconds
+  Import took 0.021119 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003318 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.139 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.0 MB.
+System memory in use after: 141.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3730.
+Total: 2.332800 ms (FindLiveObjects: 0.294900 ms CreateObjectMapping: 0.128500 ms MarkObjects: 1.890700 ms  DeleteObjects: 0.017800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003338 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.1 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3733.
+Total: 3.515800 ms (FindLiveObjects: 0.256000 ms CreateObjectMapping: 0.138700 ms MarkObjects: 3.104400 ms  DeleteObjects: 0.015900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003302 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.915 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.1 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3736.
+Total: 2.394900 ms (FindLiveObjects: 0.273700 ms CreateObjectMapping: 0.164300 ms MarkObjects: 1.941100 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003306 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3739.
+Total: 2.135800 ms (FindLiveObjects: 0.261000 ms CreateObjectMapping: 0.143100 ms MarkObjects: 1.715000 ms  DeleteObjects: 0.016200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004418 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3742.
+Total: 2.439200 ms (FindLiveObjects: 0.305000 ms CreateObjectMapping: 0.137000 ms MarkObjects: 1.977500 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003288 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3745.
+Total: 2.210900 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.128800 ms MarkObjects: 1.814500 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003362 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3748.
+Total: 2.487900 ms (FindLiveObjects: 0.279600 ms CreateObjectMapping: 0.166800 ms MarkObjects: 2.022800 ms  DeleteObjects: 0.018000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003425 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.003 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3751.
+Total: 2.322600 ms (FindLiveObjects: 0.285100 ms CreateObjectMapping: 0.166600 ms MarkObjects: 1.852400 ms  DeleteObjects: 0.017800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003283 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3754.
+Total: 2.357000 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.160600 ms MarkObjects: 1.882000 ms  DeleteObjects: 0.019500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003302 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.0 MB.
+System memory in use after: 142.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3757.
+Total: 2.146700 ms (FindLiveObjects: 0.264300 ms CreateObjectMapping: 0.145800 ms MarkObjects: 1.720100 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003393 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.028 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3760.
+Total: 2.380700 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.167300 ms MarkObjects: 1.926700 ms  DeleteObjects: 0.015100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003218 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.053 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3763.
+Total: 2.496900 ms (FindLiveObjects: 0.296400 ms CreateObjectMapping: 0.142900 ms MarkObjects: 2.041300 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003305 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.0 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3766.
+Total: 2.598200 ms (FindLiveObjects: 0.491100 ms CreateObjectMapping: 0.240100 ms MarkObjects: 1.849200 ms  DeleteObjects: 0.017000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003573 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.066 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3769.
+Total: 2.567800 ms (FindLiveObjects: 0.358800 ms CreateObjectMapping: 0.142900 ms MarkObjects: 2.046400 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003380 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3772.
+Total: 2.440400 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.157100 ms MarkObjects: 1.965300 ms  DeleteObjects: 0.016700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003464 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.075 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.1 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3775.
+Total: 2.270600 ms (FindLiveObjects: 0.289800 ms CreateObjectMapping: 0.139400 ms MarkObjects: 1.825700 ms  DeleteObjects: 0.015200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003449 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3778.
+Total: 2.389000 ms (FindLiveObjects: 0.279300 ms CreateObjectMapping: 0.162000 ms MarkObjects: 1.932300 ms  DeleteObjects: 0.014800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003241 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.143 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3781.
+Total: 2.126500 ms (FindLiveObjects: 0.272700 ms CreateObjectMapping: 0.152700 ms MarkObjects: 1.684100 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2474.579105 seconds.
+  path: Assets/Sounds/SoundEffects/Water
+  artifactKey: Guid(1599af0c883ff5e44913134f23354f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Water using Guid(1599af0c883ff5e44913134f23354f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da9559b58c3e53744fb634643c302e7') in 0.026114 seconds
+  Import took 0.053534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.222034 seconds.
+  path: Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_bubbles_002_26517.mp3
+  artifactKey: Guid(fca9b40d112cbb644a5fb01da358a308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_bubbles_002_26517.mp3 using Guid(fca9b40d112cbb644a5fb01da358a308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c42ad226e2dcfe06e37b01dee79b3b') in 0.036702 seconds
+  Import took 0.096518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_slime_gloop_drip_fall_hit_surface_14616.mp3
+  artifactKey: Guid(21bca03f9623ac34c8b7611ff54f1fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_slime_gloop_drip_fall_hit_surface_14616.mp3 using Guid(21bca03f9623ac34c8b7611ff54f1fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa172f08e90b88882553ba1d1d6bca2') in 0.010920 seconds
+  Import took 0.026329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002676 seconds.
+  path: Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_slime_gloop_drip_fall_hit_surface_14616.mp3
+  artifactKey: Guid(21bca03f9623ac34c8b7611ff54f1fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/SoundEffects/Water/zapsplat_cartoon_slime_gloop_drip_fall_hit_surface_14616.mp3 using Guid(21bca03f9623ac34c8b7611ff54f1fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa172f08e90b88882553ba1d1d6bca2') in 0.009293 seconds
+  Import took 0.031152 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003287 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.153 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.2 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3785.
+Total: 2.407300 ms (FindLiveObjects: 0.281700 ms CreateObjectMapping: 0.164100 ms MarkObjects: 1.944900 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003346 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.147 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3788.
+Total: 2.186800 ms (FindLiveObjects: 0.299500 ms CreateObjectMapping: 0.139400 ms MarkObjects: 1.731500 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003366 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c994f87b (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff7c9962fba (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff7c9b28c8c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff7c9b31069 (Unity) StackWalker::ShowCallstack
+0x00007ff7cb00564c (Unity) GetStacktrace
+0x00007ff7cc0c4803 (Unity) DebugStringToFile
+0x00007ff7c996bf10 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff7c996330c (Unity) MonoManager::EndReloadAssembly
+0x00007ff7c996a339 (Unity) MonoManager::ReloadAssembly
+0x00007ff7cad143a1 (Unity) LoadDomainAndUserAssemblies
+0x00007ff7cad1484e (Unity) LoadUserAssemblies
+0x00007ff7cb137f88 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff7cb2020d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff7cb204230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff7cb2079be (Unity) asio::io_service::run
+0x00007ff7cb17dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7cb17dda0 (Unity) RunAssetImporterV2
+0x00007ff7ca69d73b (Unity) Application::InitializeProject
+0x00007ff7cb012be2 (Unity) WinMain
+0x00007ff7cce58fc6 (Unity) __scrt_common_main_seh
+0x00007ffde36e7c24 (KERNEL32) BaseThreadInitThunk
+0x00007ffde434d721 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.178 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.6 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3791.
+Total: 2.385100 ms (FindLiveObjects: 0.281800 ms CreateObjectMapping: 0.162500 ms MarkObjects: 1.924900 ms  DeleteObjects: 0.015100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

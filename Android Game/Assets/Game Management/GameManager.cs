@@ -45,12 +45,15 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         SwitchState(currentState);
+
+        ToggleMenuThemeMusic(true);
     }
 
     public void GameOver()
     {
         SwitchState(GameState.GameOver);
-
+        levelManager.ToggleLevelThemeMusic(false);
+        ToggleMenuThemeMusic(true);
     }
 
 
@@ -139,6 +142,23 @@ public class GameManager : MonoBehaviour
         StopAlteringTime();
         SwitchState(GameState.Playing);
 
+        levelManager.ToggleLevelThemeMusic(true);
+        ToggleMenuThemeMusic(false);
+
+    }
+
+    void ToggleMenuThemeMusic(bool play)
+    {
+
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager != null)
+        {
+            if (play)
+                audioManager.Play("Menu", false);
+            else
+                audioManager.Stop("Menu");
+        }
     }
 
     void UpdateScore()

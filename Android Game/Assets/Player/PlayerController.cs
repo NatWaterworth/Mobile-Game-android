@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         if (GetComponent<SpriteRenderer>() != null)
         {
-           playerBodySprite = GetComponent<SpriteRenderer>().sprite;
+            playerBodySprite = GetComponent<SpriteRenderer>().sprite;
         }
     }
 
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         if (GetComponent<SpriteRenderer>() != null)
         {
-             GetComponent<SpriteRenderer>().sprite = playerBodySprite;
+            GetComponent<SpriteRenderer>().sprite = playerBodySprite;
         }
 
         dead = false;
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
                 if (ppManager != null)
                     ppManager.StartVingetteEffect();
-            }   
+            }
             endPoint = Input.touches[0];
 
             if (CameraController.instance != null)
@@ -108,12 +108,14 @@ public class PlayerController : MonoBehaviour
         if (CameraController.instance != null)
         {
             CameraController.instance.ShakeCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxImpactOnDrag);
-            CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance)* cameraMaxZoomOnRelease);
+            CameraController.instance.ZoomCamera(Mathf.Clamp01((_endPoint - _startPoint).magnitude / maxDragDistance) * cameraMaxZoomOnRelease);
         }
 
         if (ppManager != null)
             ppManager.EndVingetteEffect();
         #endregion
+
+        PlaySound("SlimeFling");
     }
 
     void Stick(GameObject obj)
@@ -148,9 +150,9 @@ public class PlayerController : MonoBehaviour
     {
         float time = Time.time;
 
-        while(Time.time - time < despawnDelay)
+        while (Time.time - time < despawnDelay)
         {
-            splatterRenderer.color = new Color(splatterRenderer.color.r, splatterRenderer.color.g, splatterRenderer.color.b, Mathf.Sqrt( Mathf.InverseLerp(1, 0, (Time.time - time) / despawnDelay)));
+            splatterRenderer.color = new Color(splatterRenderer.color.r, splatterRenderer.color.g, splatterRenderer.color.b, Mathf.Sqrt(Mathf.InverseLerp(1, 0, (Time.time - time) / despawnDelay)));
             yield return new WaitForEndOfFrame();
         }
         splatterRenderer.gameObject.SetActive(false);
@@ -187,7 +189,7 @@ public class PlayerController : MonoBehaviour
 
         if (GetComponent<SpriteRenderer>() != null)
         {
-            GetComponent<SpriteRenderer>().sprite= null;
+            GetComponent<SpriteRenderer>().sprite = null;
         }
         #endregion
 
@@ -203,7 +205,11 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.GameOver();
         }
         else Debug.LogError("No GameManager found!");
+
+        PlaySound("SlimeDie");
     }
+
+    #region Collision
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -213,21 +219,24 @@ public class PlayerController : MonoBehaviour
             CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude / cameraMaxImpactOnCollision));
         }
 
-        if(hitEffect != null)
+        if (hitEffect != null)
         {
             Vector3 dir = collision.transform.position - transform.position;
-            hitEffect.transform.localEulerAngles = new Vector3(0,0,-Vector3.SignedAngle(Vector3.up,dir,Vector3.forward));
+            hitEffect.transform.localEulerAngles = new Vector3(0, 0, -Vector3.SignedAngle(Vector3.up, dir, Vector3.forward));
             hitEffect.Play();
         }
 
         if (splatter != null)
             SpawnHitSplatter(collision.GetContact(0).point, collision.transform);
+
+        PlaySound("SlimeFling");
+
         #endregion
 
-            #region Move Check
+        #region Move Check
         if (collision.gameObject.CompareTag(moveResetTag))
         {
-            Stick(collision.gameObject);           
+            Stick(collision.gameObject);
         }
         #endregion
 
@@ -239,7 +248,7 @@ public class PlayerController : MonoBehaviour
                 CameraController.instance.ShakeCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude));
                 CameraController.instance.ZoomCamera(Mathf.Clamp01(collision.relativeVelocity.magnitude));
             }
-            Die();        
+            Die();
         }
         #endregion
     }
@@ -249,8 +258,23 @@ public class PlayerController : MonoBehaviour
         #region Game Over Check
         if (collision.gameObject.CompareTag(enemyTag))
         {
-            Die();  
+            Die();
         }
         #endregion
     }
+    #endregion
+
+    #region Sound
+
+    void PlaySound(string name)
+    {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager != null)
+        {
+            audioManager.Play(name, true);
+        }
+    }
+
+    #endregion
 }

@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] [Range(0.1f,10f)]float levelScale;
 
     [Header("Level Visuals")]
-    [SerializeField] int levelVisualIndex;
+    [SerializeField] int levelVisualIndex, levelTypes;
     [SerializeField] float levelTransitionTime;
     [SerializeField] LightingManager lightingManager;
     [SerializeField] PostProcessManager ppManager;
@@ -232,10 +232,30 @@ public class LevelManager : MonoBehaviour
         if (ppManager != null && portal != null)
             ppManager.StartPortalEffect(levelTransitionTime, portal.GetPortalColour(levelVisualIndex));
 
+        ToggleLevelThemeMusic(false);
+
         levelVisualIndex++;
-     
+
+        ToggleLevelThemeMusic(true);
+
         RestartLevel(false);
     }
+
+    public void ToggleLevelThemeMusic(bool play)
+    {
+
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager != null)
+        {
+            if(play)
+                audioManager.Play("Level" + ((levelVisualIndex % levelTypes) + 1).ToString(), false);
+            else
+                audioManager.Stop("Level" + ((levelVisualIndex % levelTypes) + 1).ToString());
+        }
+    }
+
+
 
     /// <summary>
     /// Return the increase in progress for the current level.
@@ -271,6 +291,8 @@ public class LevelManager : MonoBehaviour
             totalRunActivatedTimes = 0;
         }
         SetLevelVisuals();
+
+
 
         if (player != null)
         {

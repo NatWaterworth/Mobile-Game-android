@@ -83,6 +83,16 @@ public class RisingDeathBox : MonoBehaviour
         transform.position += new Vector3(0, Mathf.Pow(distance, transitionExponent), 0) * Time.deltaTime;
     }
 
+    void PlayCollisionSound()
+    {
+        AudioManager audioManager = FindObjectOfType<AudioManager>();
+
+        if (audioManager != null)
+        {
+            audioManager.Play("WaterRush",false);
+        }
+    }
+
     public void TransitionWater()
     {
         currentState = DeathBoxState.Transition;
@@ -98,6 +108,7 @@ public class RisingDeathBox : MonoBehaviour
             {
                 float _size = Mathf.Lerp(minSplashSize, maxSplashSize, Mathf.InverseLerp(splashVelocity, maxSplashVelocity, collision.attachedRigidbody.velocity.magnitude));
                 Splash(_size);
+                PlayCollisionSound();
             }
                
         }
