@@ -31,7 +31,7 @@ public class MovingPlatform : MonoBehaviour
 
     void PingPong()
     {
-        if (startPoint != null && EndPoint != null)
+        if (startPoint != null && EndPoint != null && cycleTime > 0)
             transform.position = Vector3.Lerp(startPoint.position, EndPoint.position, (1 + Mathf.Sin((Time.time + cycleOffset) / cycleTime)) / 2);
     }
 

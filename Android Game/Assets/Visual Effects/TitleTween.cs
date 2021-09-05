@@ -17,7 +17,7 @@ public class TitleTween : MonoBehaviour
         if (GetComponent<RectTransform>() != null)
         {           
             //GetComponent<RectTransform>().position -= new Vector3(0, moveY, 0);
-            LeanTween.moveY(gameObject, GetComponent<RectTransform>().rect.y + moveY, duration).setEase(easeType).setIgnoreTimeScale(true).setLoopPingPong().setDelay(delay);
+            LeanTween.moveY(gameObject.GetComponent<RectTransform>(),  moveY, duration).setEase(easeType).setIgnoreTimeScale(true).setLoopPingPong().setDelay(delay);
           
         }
     }

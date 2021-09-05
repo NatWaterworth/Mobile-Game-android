@@ -107,7 +107,7 @@ public class LevelManager : MonoBehaviour
             if (chance < enemySpawnChance) //try to get part if it's active, get the next one.
             {
 
-                while (enemyLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1)].InUse() || choice > 10)
+                while (enemyLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1)].InUse() || choice < 10)
                     choice++;
                 _part = enemyLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * enemyLevelParts.Count) + choice) % enemylevelPartRange + (levelPartRangeIncrement* (activatedTimes + totalRunActivatedTimes))), enemyLevelParts.Count - 1)];
                 _part.SetupAsset(_position, _rotation, _scale);
@@ -120,7 +120,7 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice > 10)
+                while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice < 10)
                     choice++;
                 _part = boundaryLevelParts[Mathf.Min( Mathf.RoundToInt((((chance - enemySpawnChance) / (1 - enemySpawnChance) * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))),boundaryLevelParts.Count-1)];
                 _part.SetupAsset(_position, _rotation, _scale);
@@ -130,7 +130,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice > 10)
+            while (boundaryLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)].InUse() || choice < 10)
                 choice++;
             _part = boundaryLevelParts[Mathf.Min(Mathf.RoundToInt(((chance * boundaryLevelParts.Count) + choice) % boundaryLevelRange + (levelPartRangeIncrement * (activatedTimes + totalRunActivatedTimes))), boundaryLevelParts.Count - 1)];
             _part.SetupAsset(_position, _rotation, _scale);
